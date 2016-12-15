@@ -269,4 +269,4 @@ image{
 
 - 2、写的Demo 虽然挺简单的，思路应该也说清楚了，分享出来也应该能带大家入门，**[Github 地址](https://github.com/gitkong/SmallProgram)** 如果大家还有什么不明白的或者上文有什么不正确的地方，欢迎评论指教，谢谢
 
-- 3、欢迎大家关注我，喜欢给个like 和 star ，更新也需要动力喔~
+- 3、欢迎大家去[简书](http://www.jianshu.com/users/fe5700cfb223/latest_articles)关注我，喜欢给个like 和 star ，更新也需要动力喔~
