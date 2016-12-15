@@ -1,0 +1,104 @@
+/**index.wxss**/
+
+.container .frame-item{
+  background-color: lightcyan;
+  /*内边距*/
+  /*padding-left: 20px;*/
+  width: 100%;
+  height: 44px;
+  /*border-radius: 22px;*/
+  /*保持一致，不管子控件*/
+  flex: 1;
+
+  /*有四个值，上右下左*/
+  margin: 10rpx;
+
+  /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
+  display: flex;
+  flex-direction: row;
+
+  /*垂直对齐居中*/
+  align-items: center;
+  /*justify-content属性定义了项目在主轴上的对齐方式 flex-start | flex-end | center | space-between | space-around;*/
+  justify-content: space-between;
+}
+
+text{
+  /*background-color: gray;*/
+  text-align: left;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+image{
+  /*background-color: blue;*/
+  width: 20px;
+  height: 20px;
+  /*padding-right: 20px;*/
+  margin-right: 20px;
+  transition: 400ms;
+}
+
+.frame-img.open{
+  transform: rotate(90deg);
+}
+
+.frame-img.close{
+  transform: rotate(0deg);
+}
+
+
+.frame-detail-view {
+  /*不显示*/
+  display: none;
+}
+
+.frame-detail-view-show{
+  /*显示*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-frame-item{
+  width: 100%;
+  height: 44px;
+  /*background-color: lightgrey;*/
+  /*constainer 那偏移了10，这里偏移-10才为0*/
+  margin: -10rpx 0px 0px 0px;
+  /*垂直对齐居中*/
+  align-items: center;
+  /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
+  display: flex;
+  flex-direction: row;
+  /*justify-content属性定义了项目在主轴上的对齐方式 flex-start | flex-end | center | space-between | space-around;*/
+  justify-content: space-between
+}
+
+/*第二层的分割线*/
+.detail-frame-line{
+   /* top 给-1 抵消高度*/
+    margin: -1rpx 0px 0px 40px;
+    height: 1px;
+    background-color: #DFDFDF;
+}
+/*第三层的分割线*/
+.detail-detail-frame-line{
+    /* top 给-1 抵消高度*/
+    margin: -1rpx 0px 0px 60px;
+    height: 1px;
+    background-color: #DFDFDF;
+}
+
+/*第二层的text*/
+.frame-detail-name{
+  margin-left: 20px;
+  color: black
+}
+
+/*第三层的text*/
+.frame-detail-detail-name{
+  margin-left: 40px;
+  color: black;
+  font-size: 13px;
+}

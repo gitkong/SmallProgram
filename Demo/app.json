@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/catalogue/catalogue",
+    
+    "pages/index/frame/frame",
+    "pages/tool/frame/frame",
+    "pages/component/frame/frame",
+    "pages/api/frame/frame",
+    
+    "pages/component/component",
+    "pages/api/api",
+    "pages/tool/tool"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "框架",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png"
+      },
+      {
+        "pagePath": "pages/component/component",
+        "text": "组件",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png"
+      },
+      {
+        "pagePath": "pages/api/api",
+        "text": "API",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png"
+      },
+      {
+        "pagePath": "pages/tool/tool",
+        "text": "工具",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png"
+      }
+    ]
+  }
+}

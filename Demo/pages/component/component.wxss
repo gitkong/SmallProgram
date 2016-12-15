@@ -1,0 +1,2 @@
+/*共用css*/
+@import '../index/index.wxss';
