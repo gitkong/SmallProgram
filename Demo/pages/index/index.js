@@ -257,9 +257,11 @@ Page({
       // 首层item
       var item = items[index];
       // 修改状态
-      item.isShow = !item.isShow
-      items[index] = item
-      data.items = items
+      if (item.isLevels){
+        item.isShow = !item.isShow
+        items[index] = item
+        data.items = items
+      }
     }
     this.setData(data)
   },
