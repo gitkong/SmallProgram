@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/index/catalogue/catalogue",
-    
+    "pages/index/info/info",
+
     "pages/index/frame/frame",
     "pages/tool/frame/frame",
     "pages/component/frame/frame",
@@ -11,6 +12,7 @@
     "pages/component/component",
     "pages/api/api",
     "pages/tool/tool"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

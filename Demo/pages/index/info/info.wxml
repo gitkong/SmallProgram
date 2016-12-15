@@ -1,0 +1,8 @@
+<view class = "contrainer">
+
+    <view class = "title">配置</view>
+
+    <view class = "form-introduction">小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。</view>
+    <view class = "form-introduction">一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：</view>
+
+</view>

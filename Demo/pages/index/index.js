@@ -11,7 +11,7 @@ Page({
       {
         name : '目录结构',
         arrowImagePath : "../../image/arrowright.png" ,
-        url : 'frame/frame',
+        url : 'catalogue/catalogue',
         isShow : false,
         isLevels : false,
         detailItems:[]
@@ -20,7 +20,7 @@ Page({
       {
         name : '配置',
         arrowImagePath : "../../image/arrowright.png"  ,
-        url : 'frame/frame',
+        url : 'info/info',
         isShow : false,
         isLevels : false,
         url : 'frame/frame',
