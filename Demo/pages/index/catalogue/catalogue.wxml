@@ -7,58 +7,58 @@
     <view class = "form-introduction">一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：</view>
 
     <view class = "form form-title">
-        <view>文件</view>
-        <view>必填</view>
-        <view>作用</view>
+        <view class = "form-item">文件</view>
+        <view class = "form-item">必填</view>
+        <view class = "form-item">作用</view>
     </view>
     <view class = "form form-content">
-        <view class = "first">app.js</view>
-        <view>是</view>
-        <view>小程序逻辑</view>
+        <view class = "first form-item" bindtap = "jump">app.js</view>
+        <view class = "form-item">是</view>
+        <view class = "form-item">小程序逻辑</view>
     </view>
     <view class = "form-separateLine"></view>    
     <view class = "form form-content">
-        <view class = "first">app.json</view>
-        <view>是</view>
-        <view>小程序公共设置</view>
+        <view class = "first form-item" bindtap = "jump">app.json</view>
+        <view class = "form-item">是</view>
+        <view class = "form-item">小程序公共设置</view>
     </view>
     <view class = "form-separateLine"></view>        
     <view class = "form form-content">
-        <view class = "first">app.wxss</view>
-        <view>是</view>
-        <view>小程序公共样式表</view>
+        <view class = "first form-item" bindtap = "jump">app.wxss</view>
+        <view class = "form-item">是</view>
+        <view class = "form-item">小程序公共样式表</view>
     </view>
     <view class = "form-separateLine"></view>    
 
     <view class = "form-introduction">一个小程序页面由四个文件组成，分别是：</view>
 
     <view class = "form form-title">
-        <view>文件类型</view>
-        <view>必填</view>
-        <view>作用</view>
+        <view class = "form-item">文件类型</view>
+        <view class = "form-item">必填</view>
+        <view class = "form-item">作用</view>
     </view>
     <view class = "form form-content">
-        <view class = "first">js</view>
-        <view>是</view>
-        <view>页面逻辑</view>
-    </view>
-    <view class = "form-separateLine"></view> 
-    <view class = "form form-content">
-        <view class = "first">wxml</view>
-        <view>是</view>
-        <view>页面结构</view>
+        <view class = "first form-item" bindtap = "jump">js</view>
+        <view class = "form-item">是</view>
+        <view class = "form-item">页面逻辑</view>
     </view>
     <view class = "form-separateLine"></view> 
     <view class = "form form-content">
-        <view class = "first">wxss</view>
-        <view>否</view>
-        <view>页面样式表</view>
+        <view class = "first form-item" bindtap = "jump">wxml</view>
+        <view class = "form-item">是</view>
+        <view class = "form-item">页面结构</view>
     </view>
     <view class = "form-separateLine"></view> 
     <view class = "form form-content">
-        <view class = "first">json</view>
-        <view>否</view>
-        <view>页面配置</view>
+        <view class = "first form-item" bindtap = "jump">wxss</view>
+        <view class = "form-item">否</view>
+        <view class = "form-item">页面样式表</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "first form-item" bindtap = "jump">json</view>
+        <view class = "form-item">否</view>
+        <view class = "form-item">页面配置</view>
     </view>
     <view class = "form-separateLine"></view> 
     <view class = "form-attention">注意：为了方便开发者减少配置项，我们规定描述页面的这四个文件必须具有相同的路径与文件名。</view>    

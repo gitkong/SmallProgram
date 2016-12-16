@@ -23,7 +23,6 @@ Page({
         url : 'info/info',
         isShow : false,
         isLevels : false,
-        url : 'frame/frame',
         detailItems:[]
       },
       {

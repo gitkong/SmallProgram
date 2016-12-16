@@ -1,6 +1,47 @@
 // pages/index/info/info.js
 Page({
-  data:{},
+  data:{
+    json : [
+      '{\n"pages": [\n"pages/index/index",\n"pages/logs/index"\n],\n"window": {\n"navigationBarTitleText": "Demo"\n},\n"tabBar": {\n"list": [\n{\n"pagePath": "pages/index/index",\n"text": "首页"\n}, \n{\n"pagePath": "pages/logs/logs",\n"text": "日志"\n}\n]\n},\n"networkTimeout": {\n"request": 10000,\n"downloadFile": 10000\n},\n"debug": true\n}\n',
+      '{\n"pages": [\n"pages/index/index",\n"pages/logs/index"\n]\n}'
+    ],
+  },
+  showJson:function(e){
+    var str = e.target.id
+    if (typeof str != 'string') {
+        str = str.stringify(json, undefined, 2);
+    }
+    str = str.replace(/&/g, '&').replace(/</g, '<').replace(/>/g, '>');
+    this.setData({
+      json : str.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    })
+    }
+    )
+  },
+  jump:function(){
+    wx.showModal({
+      title: '提示',
+      content: '敬请期待',
+       success: function(res) {
+        if (res.confirm) {
+          // console.log('用户点击确定')
+        }
+      }
+    })
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },

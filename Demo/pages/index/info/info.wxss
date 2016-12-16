@@ -1,1 +1,21 @@
 /* pages/index/info/info.wxss */
+
+/*目录 显示（左边有垂直竖线，右边目录）*/
+.catalogue-view{
+    background-color: #FFFFFF;
+    color: #727272;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.catalogue-view-verical-line{
+    background-color: #DFDFDF;
+    width: 3px;
+}
+
+.catalogue-view-content-item{
+    margin: 10px 0px 10px 10px;
+}

@@ -1,8 +1,92 @@
 <view class = "contrainer">
-
+    <!--标题-->
     <view class = "title">配置</view>
 
-    <view class = "form-introduction">小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。</view>
-    <view class = "form-introduction">一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：</view>
+    <view class = "form-introduction">我们使用 app.json 文件来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。</view>
+    <view class = "form-introduction">以下是一个包含了所有配置选项的简单配置 app.json  ：</view>
+    <!--代码块-->
+    <view class = "code-block">
+        <text>{{json[0]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">app.json 配置项列表</view>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">属性</view>
+        <view class = "form-item">类型</view>
+        <view class = "form-item">必填</view>
+        <view class = "form-item">描述</view>
+    </view>
+    <view class = "form form-content">
+        <view class = "first form-item" bindtap = "jump">Pages</view>
+        <view class = "form-item">String Array</view>
+        <view class = "form-item">是</view>
+        <view class = "form-item">设置页面路径</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "first form-item" bindtap = "jump">window</view>
+        <view class = "form-item">Object</view>
+        <view class = "form-item">否</view>
+        <view class = "form-item">设置默认页面的窗口表现</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "first form-item" bindtap = "jump">tabBar</view>
+        <view class = "form-item">Object</view>
+        <view class = "form-item">否</view>
+        <view class = "form-item">设置底部 tab 的表现</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <!--设置宽度了，但英文不会自动换行，中文就能自动换行-->
+        <view class = "first form-item" bindtap = "jump">networkTimeout</view>
+        <view class = "form-item">Object</view>
+        <view class = "form-item">否</view>
+        <view class = "form-item">设置网络超时时间</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form form-content">
+        <view class = "first form-item" bindtap = "jump">debug</view>
+        <view class = "form-item">Boolean</view>
+        <view class = "form-item">否</view>
+        <view class = "form-item">设置是否开启 debug 模式</view>
+    </view>
+    <view class = "form-separateLine"></view>
+
+    <!--小标题-->
+    <view class = "child-title">pages</view>
+    <!--介绍-->
+    <view class = "form-introduction">接受一个数组，每一项都是字符串，来指定小程序由哪些页面组成。每一项代表对应页面的【路径+文件名】信息，数组的第一项代表小程序的初始页面。小程序中新增/减少页面，都需要对 pages 数组进行修改。</view>
+    <view class = "form-introduction">文件名不需要写文件后缀，因为框架会自动去寻找路径.json,.js,.wxml,.wxss的四个文件进行整合。</view>
+    <view class = "form-introduction">如开发目录为：</view>
+
+    <!--目录-->
+    <view class = "catalogue-view">
+        <view class = "catalogue-view-verical-line"></view>
+        <view class = "catalogue-view-content">
+            <view class = "catalogue-view-content-item">pages/</view>
+            <view class = "catalogue-view-content-item">pages/index/index.wxml</view>
+            <view class = "catalogue-view-content-item">pages/index/index.js</view>
+            <view class = "catalogue-view-content-item">pages/index/index.wxss</view>
+            <view class = "catalogue-view-content-item">pages/logs/logs.wxml</view>
+            <view class = "catalogue-view-content-item">pages/logs/logs.js</view>
+            <view class = "catalogue-view-content-item">app.js</view>
+            <view class = "catalogue-view-content-item">app.json</view>
+            <view class = "catalogue-view-content-item">app.wxss</view>
+        </view>        
+    </view>
+    
+    <view class = "form-introduction">则，我们需要在 app.json 中写</view>
+    <!--代码块-->
+    <view class = "code-block">
+        <text>{{json[1]}}</text>
+    </view>
+
+    <view class = "child-title">window</view>
+    <!--介绍-->
+    <view class = "form-introduction">用于设置小程序的状态栏、导航条、标题、窗口背景色。</view>
 
 </view>
+
