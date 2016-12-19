@@ -8,6 +8,15 @@ Page({
     authorMessage: '\n\n* 首先声明：所有内容来自微信官方文档！\n*\n* 本人一直从事iOS开发，前端的也自学过点皮毛，小程序出来挺久了，2016.12.12开始着手研究，当然首先是看官方文档，发现文档还是比较详细的，就打算写个小程序版的文档来练手~功能点会持续更新！欢迎关注\n*\n* author gitkong\n* gitHub https://github.com/gitkong\n* 简书 gitkong\n* 微信公众号 原创技术分享\n*\n* 欢迎关注我简书（搜gitkong），喜欢就给个like 和 star 喔~',
 
     items:[
+      // {
+      //   name : '凤',
+      //   arrowImagePath : "../../image/arrowright.png" ,
+      //   url : 'frame/frame',
+      //   isShow : false,
+      //   isLevels : false,
+      //   detailItems:[]
+        
+      // },
       {
         name : '目录结构',
         arrowImagePath : "../../image/arrowright.png" ,

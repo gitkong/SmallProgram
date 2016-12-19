@@ -19,3 +19,11 @@
 .catalogue-view-content-item{
     margin: 10px 0px 10px 10px;
 }
+
+
+.introduction-image{
+    /*background-color: red;*/
+    width: 100%;
+    height: 300px;
+}
+
