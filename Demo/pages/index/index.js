@@ -46,7 +46,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'registPragram/registPragram',
             detailDetailItems:[]
           },
           {
@@ -54,7 +54,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'registPages/registPages',
             detailDetailItems:[]
           },
           {
@@ -62,7 +62,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'module/module',
             detailDetailItems:[]
           },
           {
@@ -70,7 +70,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'API/API',
             detailDetailItems:[]
           }
         ]

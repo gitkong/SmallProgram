@@ -1,19 +1,22 @@
 /**app.wxss**/
-.container {
+.contrainer {
   /*height: 100%;*/
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /*padding: 200rpx 0;*/
   box-sizing: border-box;
 } 
 
 /*-------------------------------------------作者信息-------------------------------------------------*/
-
-.author-message{
+.author-message-view{
+  padding: 0px 0px 20px 0px;
+  margin: 0px 30px 0px 30px;
   font-size: 14px;
 }
+
+/*.author-message{
+  margin: 0px 30px 0px 30px;
+  font-size: 14px;
+}*/
 
 
 /*-------------------------------------------详情介绍-------------------------------------------------*/
@@ -62,7 +65,7 @@
     margin: 0px 0px 0px 0px;
 }
 
-.form-content .jump{
+.jump{
     color: #1E6FBD;
 }
 
@@ -99,26 +102,26 @@
     margin-bottom: 10px;
 }
 .child-title{
-    font-size: 18px;
+    font-size: 17px;
     font-weight:bold;
     padding: 0px 5px 0px 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 /*---------------------------------------------介绍-----------------------------------------------*/
 .form-introduction{
     font-size: 14px;
-    padding: 0px 5px 0px 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /*padding: 0px 5px 0px 5px;*/
+    margin: 10px 0px 10px 5px;
     color: #515151;
 }
 
 .blod{
     font-weight:bold;
     font-size: 15px;
+    /*padding: 0px 0px 0px 0px;*/
 }
 
 /*--------------------------------------注意点------------------------------------------------------*/
@@ -126,31 +129,42 @@
     font-size: 14px;
     font-weight:bold;
     padding: 0px 5px 0px 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
 
 /*--------------------------------------代码块------------------------------------------------------*/
 
-.code-block{
+.code-block-json{
     background-color: #F5F5F5;
-    /*background-color: gainsboro;*/
     padding-left: 10px;
     font-size: 13px;
     font-weight:bold;
-    margin: 20px 0px 20px 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: #95B04A;
+}
+
+.code-block-js{
+    background-color: #F5F5F5;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight:bold;
+    margin: 10px 0px 10px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
 }
 
 /*代码说明*/
 .code-text{
     background-color: #F5F5F5;
     font-size: 12px;
-    margin: 0px 10px 0px 10px;
+    padding: 0px 5px 0px 5px;
+    margin-right: 5px;
 }
 
 

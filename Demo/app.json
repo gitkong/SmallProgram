@@ -3,6 +3,10 @@
     "pages/index/index",
     "pages/index/catalogue/catalogue",
     "pages/index/info/info",
+    "pages/index/registPragram/registPragram",
+    "pages/index/registPages/registPages",
+    "pages/index/module/module",
+    "pages/index/API/API",
 
     "pages/index/frame/frame",
     "pages/tool/frame/frame",

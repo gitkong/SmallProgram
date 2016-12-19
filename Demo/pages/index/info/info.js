@@ -9,7 +9,7 @@ Page({
     ],
     images : [
       'https://mp.weixin.qq.com/debug/wxadoc/dev/image/config.jpg?t=20161122',
-      'https://mp.weixin.qq.com/debug/wxadoc/dev/image/tabbar.png?t=20161122'
+      'https://mp.weixin.qq.com/debug/wxadoc/dev/image/tabbar.png?t=20161122',
     ]
   },
   showJson:function(e){
@@ -48,11 +48,23 @@ Page({
       }
     })
   },
+  countImageUrlSize:function(){
+    var data = this.data
+    var images = data["images"]
+    for(var index in images){
+      var url = images[index]
+
+    }
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+
   },
   onReady:function(){
     // 页面渲染完成
+    
+
+    this.countImageUrlSize()
   },
   onShow:function(){
     // 页面显示

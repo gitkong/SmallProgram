@@ -58,7 +58,7 @@
   </block>
 </view>
 <!--作者简介-->
-<view>
+<view class = "author-message-view">
   <text class = "author-message">{{authorMessage}}</text>
 </view>
 

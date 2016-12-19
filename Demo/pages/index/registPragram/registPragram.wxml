@@ -1,0 +1,79 @@
+<!--pages/index/registPragram/registPragram.wxml-->
+<view class="contrainer">
+    <!--标题-->
+    <view class = "title">App</view>
+    <!--小标题-->
+    <view class = "child-title">App()</view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">App()</text>函数用来注册一个小程序。接受一个 object 参数，其指定小程序的生命周期函数等。</view>
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">object参数说明：</view>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">属性</view>
+        <view class = "form-item">类型</view>
+        <view class = "form-item">描述</view>
+        <view class = "form-item">触发时机</view>
+    </view>
+    <view class = "form-special form-content">
+        <view class = "form-item">onLaunch</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听小程序初始化</view>
+        <view class = "form-item">当小程序初始化完成时，会触发 onLaunch（全局只触发一次）</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form-special form-content">
+        <view class = "form-item">onShow</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听小程序显示</view>
+        <view class = "form-item">当小程序启动，或从后台进入前台显示，会触发 onShow</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form-special form-content">
+        <view class = "form-item">onHide</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听小程序隐藏</view>
+        <view class = "form-item">当小程序从前台进入后台，会触发 onHide</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form-special form-content">
+        <!--设置宽度了，但英文不会自动换行，中文就能自动换行,通过\n手动换行,json 格式显示出来没有code标签，可以通过手动添加\n实现，但没有\t缩进效果-->
+        <view class = "form-item">其他</view>
+        <view class = "form-item">Any</view>
+        <view class = "form-item">开发者可以添加任意的函数或数据到 Object 参数中，用 this 可以访问</view>
+        <view class = "form-item">  </view>
+    </view>
+    <view class = "form-separateLine"></view>
+
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "form-introduction blod">前台、后台定义：</text>当用户点击左上角关闭，或者按了设备 Home 键离开微信，小程序并没有直接销毁，而是进入了后台；当再次进入微信或再次打开小程序，又会从后台进入前台。</view>
+    <view class = "form-introduction">只有当小程序进入后台一定时间，或者系统资源占用过高，才会被真正的销毁。</view>
+    <view class = "form-introduction blod">示例代码：</view>
+
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">App.prototype.getCurrentPage()</view>
+    <!--介绍-->
+    <view class = "form-introduction">将被废弃，请用<text class = "jump" bindtap = "jump">getCurrentPages()</text>替代</view>
+
+    <!--小标题-->
+    <view class = "child-title">getApp()</view>
+    <!--介绍-->
+    <view class = "form-introduction">我们提供了全局的<text class = "code-text">getApp()</text>函数，可以获取到小程序实例。</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[1]}}</text>
+    </view>
+
+    <!--注意-->
+    <view class = "form-attention">注意：</view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">App()</text>必须在<text class = "code-text">app.js</text>中注册，且不能注册多个。</view>
+    <view class = "form-introduction">不要在定义于<text class = "code-text">App()</text>内的函数中调用<text class = "code-text">getApp()</text>，使用<text class = "code-text">this</text>就可以拿到 app 实例。</view>
+    <view class = "form-introduction">不要在 onLaunch 的时候调用<text class = "code-text">getCurrentPage()</text>，此时 page 还没有生成。</view>
+    <view class = "form-introduction">通过<text class = "code-text">getApp()</text> 获取实例之后，不要私自调用生命周期函数。</view>
+</view>

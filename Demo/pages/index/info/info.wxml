@@ -5,7 +5,7 @@
     <view class = "form-introduction">我们使用<text class = "code-text">app.json </text>文件来对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等。</view>
     <view class = "form-introduction">以下是一个包含了所有配置选项的简单配置<text class = "code-text">app.json </text> ：</view>
     <!--代码块-->
-    <view class = "code-block">
+    <view class = "code-block-json">
         <text>{{json[0]}}</text>
     </view>
 
@@ -80,7 +80,7 @@
     
     <view class = "form-introduction">则，我们需要在 app.json 中写</view>
     <!--代码块-->
-    <view class = "code-block">
+    <view class = "code-block-json">
         <text>{{json[1]}}</text>
     </view>
 
@@ -142,7 +142,7 @@
     <!--介绍-->
     <view class = "form-introduction">如 app.json ：</view>
     <!--代码块-->
-    <view class = "code-block">
+    <view class = "code-block-json">
         <text>{{json[2]}}</text>
     </view>
     <!--图片介绍-->
@@ -318,7 +318,7 @@
     <view class = "form-introduction blod">页面的<text class = "code-text">.json</text>只能设置<text class = "code-text">window</text>相关的配置项，以决定本页面的窗口表现，所以无需写<text class = "code-text">window</text>这个键，如：</view>
 
     <!--代码块-->
-    <view class = "code-block">
+    <view class = "code-block-json">
         <text>{{json[2]}}</text>
     </view>
 </view>
