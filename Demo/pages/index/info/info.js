@@ -4,10 +4,12 @@ Page({
     json : [
       '{\n"pages": [\n"pages/index/index",\n"pages/logs/index"\n],\n"window": {\n"navigationBarTitleText": "Demo"\n},\n"tabBar": {\n"list": [\n{\n"pagePath": "pages/index/index",\n"text": "首页"\n}, \n{\n"pagePath": "pages/logs/logs",\n"text": "日志"\n}\n]\n},\n"networkTimeout": {\n"request": 10000,\n"downloadFile": 10000\n},\n"debug": true\n}\n',
       '{\n"pages": [\n"pages/index/index",\n"pages/logs/index"\n]\n}',
-      '{\n"window":{\n  "navigationBarBackgroundColor": "#ffffff",\n  "navigationBarTextStyle": "black",\n  "navigationBarTitleText": "微信接口功能演示",\n  "backgroundColor": "#eeeeee",\n  "backgroundTextStyle": "light"\n }\n}\n'
+      '{\n"window":{\n  "navigationBarBackgroundColor": "#ffffff",\n  "navigationBarTextStyle": "black",\n  "navigationBarTitleText": "微信接口功能演示",\n  "backgroundColor": "#eeeeee",\n  "backgroundTextStyle": "light"\n }\n}\n',
+      '{\n"navigationBarBackgroundColor": "#ffffff",\n"navigationBarTextStyle": "black",\n\n"navigationBarTitleText": "微信接口功能演示",\n"backgroundColor": "#eeeeee",\n"backgroundTextStyle": "light"\n}'
     ],
     images : [
-      'info/image/config.jpg'
+      'https://mp.weixin.qq.com/debug/wxadoc/dev/image/config.jpg?t=20161122',
+      'https://mp.weixin.qq.com/debug/wxadoc/dev/image/tabbar.png?t=20161122'
     ]
   },
   showJson:function(e){

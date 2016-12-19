@@ -9,18 +9,24 @@
   box-sizing: border-box;
 } 
 
+/*-------------------------------------------作者信息-------------------------------------------------*/
+
 .author-message{
   font-size: 14px;
 }
+
+
+/*-------------------------------------------详情介绍-------------------------------------------------*/
 
 .introduction-message{
   font-size: 14px;
 }
 
-/*表格*/
+
+/*-------------------------------------------表格-------------------------------------------------*/
 .contrainer .form{
     /*width: 100%;*/
-    height: 50px;
+    height: 60px;
     /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
     display: flex;
     flex-direction: row;
@@ -35,7 +41,7 @@
 /*高度特殊的表格*/
 .contrainer .form-special{
     /*width: 100%;*/
-    height: 70px;
+    height: 90px;
     /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
     display: flex;
     flex-direction: row;
@@ -56,7 +62,7 @@
     margin: 0px 0px 0px 0px;
 }
 
-.form-content .first{
+.form-content .jump{
     color: #1E6FBD;
 }
 
@@ -84,7 +90,7 @@
     /*background-color: yellow;*/
 }
 
-/*标题*/
+/*---------------------------------------------标题-----------------------------------------------*/
 .title{
     font-size: 20px;
     font-weight:bold;
@@ -93,14 +99,15 @@
     margin-bottom: 10px;
 }
 .child-title{
-    font-size: 16px;
+    font-size: 18px;
     font-weight:bold;
     padding: 0px 5px 0px 5px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-/*表格介绍*/
+
+/*---------------------------------------------介绍-----------------------------------------------*/
 .form-introduction{
     font-size: 14px;
     padding: 0px 5px 0px 5px;
@@ -109,7 +116,12 @@
     color: #515151;
 }
 
-/*注意点*/
+.blod{
+    font-weight:bold;
+    font-size: 15px;
+}
+
+/*--------------------------------------注意点------------------------------------------------------*/
 .form-attention{
     font-size: 14px;
     font-weight:bold;
@@ -118,23 +130,57 @@
     margin-bottom: 20px;
 }
 
-/*代码块*/
+
+
+/*--------------------------------------代码块------------------------------------------------------*/
+
 .code-block{
     background-color: #F5F5F5;
+    /*background-color: gainsboro;*/
     padding-left: 10px;
     font-size: 13px;
-    font-weight:100;
+    font-weight:bold;
     margin: 20px 0px 20px 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #95B04A;
 }
 
-/*图片介绍*/
+/*代码说明*/
+.code-text{
+    background-color: #F5F5F5;
+    font-size: 12px;
+    margin: 0px 10px 0px 10px;
+}
+
+
+/*--------------------------------------目录 显示（左边有垂直竖线，右边目录)------------------------------------------------------*/
+
+.catalogue-view{
+    background-color: #FFFFFF;
+    color: #727272;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.catalogue-view-verical-line{
+    background-color: #DFDFDF;
+    width: 3px;
+}
+
+.catalogue-view-content-item{
+    margin: 10px 0px 10px 10px;
+}
+
+
+/*--------------------------------------图片介绍------------------------------------------------------*/
 .introduction-image-view{
-    background-color: rebeccapurple;
+    margin: 20px 0px 20px 0px;
     width: 100%;
-    height: 300px;
+    /*height: 300px;*/
     /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;row 是水平向右，默认的*/
     display: flex;
     flex-direction: row;
@@ -143,3 +189,4 @@
      /*justify-content属性定义了项目在主轴上的对齐方式 flex-start | flex-end | center | space-between | space-around;*/
     justify-content: center;
 }
+
