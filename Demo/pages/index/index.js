@@ -46,7 +46,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'registPragram/registPragram',
+            detailUrl : 'logic/registPragram/registPragram',
             detailDetailItems:[]
           },
           {
@@ -54,7 +54,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'registPages/registPages',
+            detailUrl : 'logic/registPages/registPages',
             detailDetailItems:[]
           },
           {
@@ -62,7 +62,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'module/module',
+            detailUrl : 'logic/module/module',
             detailDetailItems:[]
           },
           {
@@ -70,7 +70,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'API/API',
+            detailUrl : 'logic/API/API',
             detailDetailItems:[]
           }
         ]
@@ -94,7 +94,7 @@ Page({
                 detailDetailArrowImagePath : "../../image/arrowright.png" ,
                 detailDetailIsShow : false,
                 detailDetailIsLevels : false,
-                detailDetailUrl : 'frame/frame',
+                detailDetailUrl : 'view/WXML/dataTie/dataTie',
                 detailDetailDetailItems : []
               },
               {
@@ -102,7 +102,7 @@ Page({
                 detailDetailArrowImagePath : "../../image/arrowright.png" ,
                 detailDetailIsShow : false,
                 detailDetailIsLevels : false,
-                detailDetailUrl : 'frame/frame',
+                detailDetailUrl : 'view/WXML/conditionDye/conditionDye',
                 detailDetailDetailItems : []
               },
               {
@@ -110,7 +110,7 @@ Page({
                 detailDetailArrowImagePath : "../../image/arrowright.png" ,
                 detailDetailIsShow : false,
                 detailDetailIsLevels : false,
-                detailDetailUrl : 'frame/frame',
+                detailDetailUrl : 'view/WXML/listDye/listDye',
                 detailDetailDetailItems : []
               },
               {
@@ -118,7 +118,7 @@ Page({
                 detailDetailArrowImagePath : "../../image/arrowright.png" ,
                 detailDetailIsShow : false,
                 detailDetailIsLevels : false,
-                detailDetailUrl : 'frame/frame',
+                detailDetailUrl : 'view/WXML/mudule/mudule',
                 detailDetailDetailItems : []
               },
               {
@@ -126,7 +126,7 @@ Page({
                 detailDetailArrowImagePath : "../../image/arrowright.png" ,
                 detailDetailIsShow : false,
                 detailDetailIsLevels : false,
-                detailDetailUrl : 'frame/frame',
+                detailDetailUrl : 'view/WXML/events/events',
                 detailDetailDetailItems : []
               },
               {
@@ -134,7 +134,7 @@ Page({
                 detailDetailArrowImagePath : "../../image/arrowright.png" ,
                 detailDetailIsShow : false,
                 detailDetailIsLevels : false,
-                detailDetailUrl : 'frame/frame',
+                detailDetailUrl : 'view/WXML/quote/quote',
                 detailDetailDetailItems : []
               }
             ]
@@ -144,7 +144,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'view/WXSS/wxss',
             detailDetailItems:[]
           },
           {
@@ -152,7 +152,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'view/component/component',
             detailDetailItems:[]
           }
         ]

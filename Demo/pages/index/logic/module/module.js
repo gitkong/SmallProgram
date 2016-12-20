@@ -1,5 +1,5 @@
 // pages/index/module/module.js
-var common = require('../alert.js')
+var common = require('../../../../alert.js')
 Page({
   data:{
     codes:[

@@ -1,6 +1,6 @@
 // pages/index/info/info.js
 // 导入js
-var common = require('../alert.js')
+var common = require('../../../alert.js')
 
 Page({
   data:{

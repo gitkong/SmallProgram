@@ -1,5 +1,8 @@
-<!--pages/frame/frame.wxml-->
+
+<!--总容器-->
 <view class="contrainer">
+</view>
+
     <!--标题-->
     <view class = "title">Page</view>
     <!--小标题-->
@@ -13,7 +16,7 @@
     
     <!--代码块-->
     <view class = "code-block-js">
-        <text>{{codes[5]}}</text>
+        <text>{{codes[0]}}</text>
     </view>
     <!--段落内代码块-->
     <text class = "code-text">getCurrentPages()</text>
@@ -54,4 +57,3 @@
         <image class = "introduction-image-first" src="{{images[0]}}"></image>
     </view>
     
-</view>

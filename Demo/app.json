@@ -3,12 +3,22 @@
     "pages/index/index",
     "pages/index/catalogue/catalogue",
     "pages/index/info/info",
-    "pages/index/registPragram/registPragram",
-    "pages/index/registPages/registPages",
-    "pages/index/module/module",
-    "pages/index/API/API",
+    
+    "pages/index/logic/registPragram/registPragram",
+    "pages/index/logic/registPages/registPages",
+    "pages/index/logic/module/module",
+    "pages/index/logic/API/API",
 
-    "pages/index/frame/frame",
+    "pages/index/view/WXML/dataTie/dataTie",
+    "pages/index/view/WXML/conditionDye/conditionDye",
+    "pages/index/view/WXML/listDye/listDye",
+    "pages/index/view/WXML/mudule/mudule",
+    "pages/index/view/WXML/events/events",
+    "pages/index/view/WXML/quote/quote",
+
+    "pages/index/view/WXSS/wxss",
+    "pages/index/view/component/component",
+
     "pages/tool/frame/frame",
     "pages/component/frame/frame",
     "pages/api/frame/frame",

@@ -125,6 +125,7 @@
 .blod{
     font-weight:bold;
     font-size: 15px;
+    color: black;
     /*padding: 0px 0px 0px 0px;*/
 }
 

@@ -1,0 +1,158 @@
+<!--pages/index/view/WXML/dataTie/dataTie.wxml-->
+
+<!--总容器-->
+<view class="contrainer">
+    <!--小标题-->
+    <view class = "child-title">数据绑定</view>
+    <!--介绍-->
+    <view class = "form-introduction">WXML 中的动态数据均来自对应 Page 的 data。</view>
+
+    <!--小标题-->
+    <view class = "child-title">简单绑定</view>
+    <!--介绍-->
+    <view class = "form-introduction">数据绑定使用 Mustache 语法（双大括号）将变量包起来，可以作用于：</view>
+
+    <!--小标题-->
+    <view class = "child-title">内容</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[1]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">组件属性(需要在双引号之内)</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[2]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[3]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">控制属性(需要在双引号之内)</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[4]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[5]}}</text>
+    </view>
+
+
+    <!--小标题-->
+    <view class = "child-title">关键字(需要在双引号之内)</view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">true</text>：boolean 类型的 true，代表真值。</view>
+    <view class = "form-introduction"><text class = "code-text">false</text>： boolean 类型的 false，代表假值。</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[6]}}</text>
+    </view>
+    <!--注意-->
+    <view class = "form-attention">特别注意：不要直接写<text class = "code-text">checked="false"</text>，其计算结果是一个字符串，转成 boolean 类型后代表真值。</view>
+
+    <!--小标题-->
+    <view class = "child-title">运算</view>
+    <!--介绍-->
+    <view class = "form-introduction">可以在<text class = "code-text">{{}}</text>内进行简单的运算，支持的有如下几种方式：</view>
+
+    <!--小标题-->
+    <view class = "child-title">三元运算</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[7]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">算数运算</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[8]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[9]}}</text>
+    </view>
+    <view class = "form-introduction">view中的内容为<text class = "code-text">3 + 3 + d</text>。</view>
+    
+    <!--小标题-->
+    <view class = "child-title">逻辑判断</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[10]}}</text>
+    </view>
+    
+    <!--小标题-->
+    <view class = "child-title">字符串运算</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[11]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[12]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">数据路径运算</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[13]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[14]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">组合</view>
+    <!--介绍-->
+    <view class = "form-introduction">也可以在 Mustache 内直接进行组合，构成新的对象或者数组。</view>
+
+    <!--小标题-->
+    <view class = "child-title">数组</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[15]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[16]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction">最终组合成数组<text class = "code-text">[0, 1, 2, 3, 4]</text>。</view>
+
+    <!--小标题-->
+    <view class = "child-title">对象</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[17]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[18]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction">最终组合成的对象是<text class = "code-text">{for: 1, bar: 2}</text></view>
+    <view class = "form-introduction">也可以用扩展运算符<text class = "code-text">...</text>来将一个对象展开</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[19]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[20]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction">最终组合成的对象是<text class = "code-text">{foo: 'my-foo', bar:'my-bar'}</text>。</view>
+    <view class = "form-introduction"><text class = "blod">注意：</text>上述方式可以随意组合，但是如有存在变量名相同的情况，后边的会覆盖前面，如：</view>
+
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[21]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[22]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction">最终组合成的对象是<text class = "code-text">{a: 5, b: 3, c: 6}</text>。</view>
+    
+</view>

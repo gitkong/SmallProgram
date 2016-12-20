@@ -6,3 +6,5 @@
     <!--介绍-->
     <view class = "form-introduction">小程序开发框架提供丰富的微信原生 API，可以方便的调起微信提供的能力，如获取用户信息，本地存储，支付功能等。</view>
     <view class = "form-introduction">详细介绍请参考<text class = "jump" bindtap = "jump"> API 文档</text></view>
+
+</view>

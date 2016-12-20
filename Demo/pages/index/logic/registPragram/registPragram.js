@@ -1,5 +1,5 @@
 // pages/index/registPragram/registPragram.js
-var common = require('../alert.js')
+var common = require('../../../../alert.js')
 Page({
   data:{
     codes : [
