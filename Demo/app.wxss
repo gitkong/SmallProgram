@@ -56,6 +56,21 @@
     font-size: 13px;
 }
 
+/*高度特殊的表格*/
+.contrainer .form-superSpecial{
+    /*width: 100%;*/
+    height: 120px;
+    /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
+    display: flex;
+    flex-direction: row;
+    /*垂直对齐居中*/
+    align-items: center;
+     /*justify-content属性定义了项目在主轴上的对齐方式 flex-start | flex-end | center | space-between | space-around;*/
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    font-size: 13px;
+}
+
 .form-title{
     background-color: #F3F6F8;
     color: #7F7F7F;
@@ -75,18 +90,7 @@
     height: 1px;
 }
 
-.special{
-    /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
-    display: flex;
-    flex-direction: row;
-    /*垂直对齐居中*/
-    align-items: center;
-     /*justify-content属性定义了项目在主轴上的对齐方式 flex-start | flex-end | center | space-between | space-around;*/
-    justify-content: space-between;
-    padding: 0px 20px 0px 20px;
-    font-size: 13px;
-    height: 60px;
-}
+
 
 .form-item{
     width: 100px;
@@ -204,3 +208,32 @@
     justify-content: center;
 }
 
+/*--------------------------列表，点点形式---------------------------------*/
+.list-ul{
+    margin: 0px 5px 0px 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.list-li{
+    margin: 5px 5px 5px 20px;
+    font-size: 13px;
+}
+
+.solid-point{
+    /*background-color: greenyellow;*/
+    padding-right: 5px;
+    /*加粗*/
+    font-size: 30px;
+    /*让点偏移上去*/
+    position: relative;
+    top: -2px;
+}
+
+.empty-point{
+    /*让点偏移上去*/
+    position: relative;
+    /*加粗*/
+    font-size: 15px;
+    top: -3px;
+}

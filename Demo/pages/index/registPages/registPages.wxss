@@ -1,1 +1,7 @@
 /* pages/index/registPages/registPages.wxss */
+
+/*first image*/
+.introduction-image-first{
+    width: 100%;
+    height: 500px;
+}

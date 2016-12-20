@@ -8,7 +8,7 @@
     <view class = "code-block-json">
         <text>{{json[0]}}</text>
     </view>
-
+    
     <!--小标题-->
     <view class = "child-title">app.json 配置项列表</view>
     <!--表格-->

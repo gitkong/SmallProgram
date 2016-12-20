@@ -1,2 +1,274 @@
 <!--pages/index/registPages/registPages.wxml-->
-<text>pages/index/registPages/registPages.wxml</text>
+<view class="contrainer">
+    <!--标题-->
+    <view class = "title">Page</view>
+    
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">Page()</text>函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。</view>
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">object 参数说明：</view>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">属性</view>
+        <view class = "form-item">类型</view>
+        <view class = "form-item">描述</view>
+    </view>
+    <view class = "form form-content">
+        <view class = "jump form-item" bindtap = "jump">data</view>
+        <view class = "form-item">Object</view>
+        <view class = "form-item">页面的初始数据</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">onLoad</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听页面加载</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">onReady</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听页面初次渲染完成</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">onShow</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听页面显示</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form form-content">
+        <view class = "form-item">onHide</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听页面隐藏</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">onUnload</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">生命周期函数--监听页面卸载</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">onPullDown\nRefresh</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">页面相关事件处理函数--监听用户下拉动作</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form form-content">
+        <view class = "form-item">onReach\nBottom</view>
+        <view class = "form-item">Function</view>
+        <view class = "form-item">页面上拉触底事件的处理函数</view>
+    </view>
+    <view class = "form-separateLine"></view>
+
+    <view class = "form-superSpecial form-content">
+        <view class = "form-item">其他</view>
+        <view class = "form-item">Any</view>
+        <view class = "form-item">开发者可以添加任意的函数或数据到 object 参数中，在页面的函数中用<text class = "code-text">this</text>可以访问</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">示例代码：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+
+
+    <!--小标题-->
+    <view class = "child-title">初始化数据</view>
+    <!--介绍-->
+    <view class = "form-introduction">初始化数据将作为页面的第一次渲染。data 将会以 JSON 的形式由逻辑层传至渲染层，所以其数据必须是可以转成 JSON 的格式：字符串，数字，布尔值，对象，数组。</view>
+    <view class = "form-introduction">渲染层可以通过<text class = "jump" bindtap = "jump"> WXML </text>对数据进行绑定。</view>
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">示例代码：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[1]}}</text>
+    </view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[2]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">生命周期函数</view>
+
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">onLoad</text>: 页面加载</view>
+    <view class = "list-li"><text class = "empty-point">。</text>一个页面只会调用一次。</view>
+    <view class = "list-li"><text class = "empty-point">。</text>接收页面参数可以获取<text class = "code-text">wx.navigateTo</text>和<text class = "code-text">wx.redirectTo</text>及<text class = "code-text">{{tranferText}}</text>中的 query。</view>
+    
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">onShow</text>: 页面显示</view>
+    <view class = "list-li"><text class = "empty-point">。</text>每次打开页面都会调用一次。</view>
+
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">onReady</text>: 页面初次渲染完成</view>
+    <view class = "list-li"><text class = "empty-point">。</text>一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互。</view>
+    <view class = "list-li"><text class = "empty-point">。</text>对界面的设置如<text class = "code-text">wx.setNavigationBarTitle</text>请在<text class = "code-text">onReady</text>之后设置。详见<text class = "jump" bindtap = "jump">生命周期</text></view>
+
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">onHide</text>: 页面隐藏</view>
+    <view class = "list-li"><text class = "empty-point">。</text>当<text class = "code-text">navigateTo</text>或底部<text class = "code-text">tab</text>切换时调用。</view>
+
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">onUnload</text>: 页面卸载</view>
+    <view class = "list-li"><text class = "empty-point">。</text>当<text class = "code-text">redirectTo</text>或<text class = "code-text">navigateBack</text>的时候调用。</view>
+    
+
+    <!--小标题-->
+    <view class = "child-title">页面相关事件处理函数</view>
+
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">onPullDownRefresh</text>: 下拉刷新</view>
+    <view class = "list-li"><text class = "empty-point">。</text>监听用户下拉刷新事件。</view>
+    <view class = "list-li"><text class = "empty-point">。</text>需要在<text class = "code-text">config</text>的<text class = "jump" bindtap = "jump"> window </text>选项中开启<text class = "code-text">enablePullDown\nRefresh</text>。</view>
+    <view class = "list-li"><text class = "empty-point">。</text>当处理完数据刷新后，<text class = "jump" bindtap = "jump">wx.stopPullDownRefresh </text>可以停止当前页面的下拉刷新。</view>
+
+    <!--小标题-->
+    <view class = "child-title">事件处理函数</view>
+    <!--介绍-->
+    <view class = "form-introduction">除了初始化数据和生命周期函数，Page 中还可以定义一些特殊的函数：事件处理函数。在渲染层可以在组件中加入<text class = "jump" bindtap = "jump"> 事件绑定 </text>，当达到触发事件时，就会执行 Page 中定义的事件处理函数。</view>
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">示例代码：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[3]}}</text>
+    </view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[4]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">Page.prototype.setData()</view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">setData</text>函数用于将数据从逻辑层发送到视图层，同时改变对应的<text class = "code-text">this.data</text>的值。</view>
+    <!--注意-->
+    <view class = "form-attention">注意：</view>
+    <view class = "form-attention">1.直接修改 this.data 无效，无法改变页面的状态，还会造成数据不一致。</view>
+    <view class = "form-attention">2.单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据。</view>
+
+    <!--小标题-->
+    <view class = "child-title">setData() 参数格式</view>
+    <!--介绍-->
+    <view class = "form-introduction">接受一个对象，以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value。</view>
+    <view class = "form-introduction">其中 key 可以非常灵活，以数据路径的形式给出，如<text class = "code-text">array[2].message</text>，<text class = "code-text">a.b.c.d</text>，并且不需要在 this.data 中预先定义</view>
+
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">示例代码：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[5]}}</text>
+    </view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[6]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">getCurrentPages()</view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">getCurrentPages()</text>函数用于获取当前页面栈的实例，以数组形式按栈的顺序给出，第一个元素为首页，最后一个元素为当前页面。</view>
+    <!--注意-->
+    <view class = "form-attention">注意：不要尝试修改页面栈，会导致路由以及页面状态错误。</view>
+
+    <!--小标题-->
+    <view class = "child-title">页面栈</view>
+    <!--介绍-->
+    <view class = "form-introduction">框架以栈的形式维护了当前的所有页面。 当发生路由切换的时候，页面栈的表现如下：</view>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">路由方式</view>
+        <view class = "form-item">页面栈表现</view>
+    </view>
+    <view class = "form form-content">
+        <view class = "form-item">初始化</view>
+        <view class = "form-item">新页面入栈</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">打开新页面</view>
+        <view class = "form-item">新页面入栈</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">页面重定向</view>
+        <view class = "form-item">当前页面出栈，新页面入栈</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">页面返回</view>
+        <view class = "form-item">	页面不断出栈，直到目标返回页，新页面入栈</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form form-content">
+        <view class = "form-item">Tab 切换</view>
+        <view class = "form-item">当前页面出栈，新页面入栈</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <!--注意-->
+    <view class = "form-attention">以下内容你不需要立马完全弄明白，不过以后它会有帮助。</view>
+    <!--小标题-->
+    <view class = "child-title">生命周期</view>
+    <!--介绍-->
+    <view class = "form-introduction">下图说明了 Page 实例的生命周期。</view>
+
+    <!--图片介绍-->
+    <view class = "introduction-image-view">
+        <image class = "introduction-image-first" src="{{images[0]}}"></image>
+    </view>
+    
+    <!--小标题-->
+    <view class = "child-title">页面的路由</view>
+    <!--介绍-->
+    <view class = "form-introduction">在小程序中所有页面的路由全部由框架进行管理，对于路由的触发方式以及页面生命周期函数如下：</view>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">路由方式</view>
+        <view class = "form-item">触发时机</view>
+        <view class = "form-item">路由后页面</view>
+        <view class = "form-item">路由前页面</view>
+    </view>
+    <view class = "form form-content">
+        <view class = "form-item">初始化</view>
+        <view class = "form-item">小程序打开的第一个页面</view>
+        <view class = "form-item">onLoad，\nonShow</view>
+        <view class = "form-item">  </view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form-special form-content">
+        <view class = "form-item">打开新页面</view>
+        <view class = "form-item">调用 API<text class = "jump" bindtap = "jump"> wx.navigate\nTo </text>或使用组件<text class = "jump" bindtap = "jump"> {{tranferText}} </text></view>
+        <view class = "form-item">onLoad，\nonShow</view>
+        <view class = "form-item">onHide</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form-superSpecial form-content">
+        <view class = "form-item">页面重定向</view>
+        <view class = "form-item">调用 API<text class = "jump" bindtap = "jump"> wx.redirect\nTo </text>或使用组件<text class = "jump" bindtap = "jump"> {{tranferText}} </text></view>
+        <view class = "form-item">onLoad，\nonShow</view>
+        <view class = "form-item">onUnload</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form-superSpecial form-content">
+        <view class = "form-item">页面返回</view>
+        <view class = "form-item">调用 API <text class = "jump" bindtap = "jump">wx.navigate\nBack</text>或用户按左上角返回按钮</view>
+        <view class = "form-item">nonShow</view>
+        <view class = "form-item">onUnload（多层页面返回每个页面都会按顺序触发onUnload）</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form-special form-content">
+        <view class = "form-item">Tab 切换</view>
+        <view class = "form-item">多 Tab 模式下用户切换 Tab</view>
+        <view class = "form-item">第一次打开onLoad，\nonshow；否则onShow</view>
+        <view class = "form-item">onHide</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+
+    <!--小标题-->
+    <view class = "child-title">Bug & Tip</view>
+    <!--介绍-->
+    <view class = "form-introduction">1.<text class = "code-text">bug</text>: <text class = "code-text">iOS/Android 6.3.30</text>, 首次进入页面，如果页面不满一屏时会触发 onReachBottom ，应为只有用户主动上拉才触发；</view>
+    <view class = "form-introduction">2.<text class = "code-text">bug</text>: <text class = "code-text">iOS/Android 6.3.30</text>, 手指上拉，会触发多次 onReachBottom ，应为一次上拉，只触发一次；</view>
+
+</view>
