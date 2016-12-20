@@ -260,7 +260,7 @@
     <view class = "form-special form-content">
         <view class = "form-item">Tab 切换</view>
         <view class = "form-item">多 Tab 模式下用户切换 Tab</view>
-        <view class = "form-item">第一次打开onLoad，\nonshow；否则onShow</view>
+        <view class = "form-item">第一次打开onLoad，on\nshow；否则onShow</view>
         <view class = "form-item">onHide</view>
     </view>
     <view class = "form-separateLine"></view> 

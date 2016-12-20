@@ -1,2 +1,56 @@
 <!--pages/index/module/module.wxml-->
-<text>pages/index/module/module.wxml</text>
+
+<view class="contrainer">
+    <!--小标题-->
+    <view class = "child-title">文件作用域</view>
+    <!--介绍-->
+    <view class = "form-introduction">在 JavaScript 文件中声明的变量和函数只在该文件中有效；不同的文件中可以声明相同名字的变量和函数，不会互相影响。</view>
+    <view class = "form-introduction">通过全局函数<text class = "code-text"  bindtap = "jump"><text class = "jump">getApp()</text></text> 可以获取全局的应用实例，如果需要全局的数据可以在<text class = "code-text">App()</text> 中设置，如：</view>
+    
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[1]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[2]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">模块化</view>
+    <!--介绍-->
+    <view class = "form-introduction">我们可以将一些公共的代码抽离成为一个单独的 js 文件，作为一个模块。模块只有通过<text class = "code-text">module.exports</text>或者<text class = "code-text">exports</text>才能对外暴露接口。</view>
+    <view class = "form-introduction">需要注意的是：</view>
+        
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text><text class = "code-text">exports</text>是<text class = "code-text">module.exports</text>的一个引用，因此在模块里边随意更改<text class = "code-text">exports</text>的指向会造成未知的错误。所以我们更推荐开发者采用<text class = "code-text">module.exports</text>来暴露模块接口，除非你已经清晰知道这两者的关系。</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>小程序目前不支持直接引入<text class = "code-text">node_modules</text>, 开发者需要使用到<text class = "code-text">node_modules</text>时候建议拷贝出相关的代码到小程序的目录中。</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[3]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction">​在需要使用这些模块的文件中，使用<text class = "code-text">require(path)</text>将公共代码引入</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[4]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">ES6 语法以及 API 支持</view>
+    <!--介绍-->
+    <view class = "form-introduction">微信小程序运行在三端：iOS、Android 和 用于调试的开发者工具</view>
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>在 iOS 上，小程序的 javascript 代码是运行在 JavaScriptCore 中</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>在 Android 上，小程序的 javascript 代码是通过 X5 内核来解析</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>在 开发工具上， 小程序的 javascript 代码是运行在 nwjs（chrome内核） 中</view>    
+    <!--介绍-->
+    <view class = "form-introduction">虽然尽管三端的环境是十分相似的，但是至少在目前还是有一些区别的，这给很多开发者带来很大的困扰。</view>    
+    <view class = "form-introduction">在 0.10.101000 以及之后版本的开发工具中，会默认使用<text class = "code-text">babel</text>将开发者代码<text class = "code-text">ES6</text>语法转换为三端都能很好支持的<text class = "code-text">ES5</text>的代码，帮助开发者解决环境不同所带来的开发问题。开发者可以在项目设置中关闭这个功能。</view>    
+    <view class = "form-introduction">需要注意的是：</view>    
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>这种转换只会帮助开发处理语法上问题，新的<text class = "code-text">ES6</text>的 API 例如<text class = "code-text">Promise</text>等需要开发者自行引入<text class = "code-text">Polyfill</text>或者别的类库。</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>为了提高代码质量，在开启<text class = "code-text">ES6</text>转换功能的情况下，默认启用<text class = "code-text">javasctipt</text>严格模式，请参考<text class = "jump" bindtap = "jump">"use strict"</text>。</view>
+</view>

@@ -1,2 +1,57 @@
 <!--pages/frame/frame.wxml-->
-<text>pages/frame/frame.wxml</text>
+<view class="contrainer">
+    <!--标题-->
+    <view class = "title">Page</view>
+    <!--小标题-->
+    <view class = "child-title">getCurrentPages()</view>
+    <!--介绍-->
+    <view class = "form-introduction">函数用于获取当前页面栈的实例，以数组形式按栈的顺序给出，第一个元素为首页，最后一个元素为当前页面。</view>
+    <!--介绍，粗体-->
+    <view class = "form-introduction blod">示例代码：</view>
+    <!--注意-->
+    <view class = "form-attention">注意：不要尝试修改页面栈，会导致路由以及页面状态错误。</view>
+    
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[5]}}</text>
+    </view>
+    <!--段落内代码块-->
+    <text class = "code-text">getCurrentPages()</text>
+
+    <!--表格-标题-->
+    <view class = "form form-title">
+        <view class = "form-item">表格-标题</view>
+        <view class = "form-item">程度</view>
+    </view>
+
+    <!--表格-内容-->
+    <view class = "form form-content">
+        <view class = "form-item">表格-内容</view>
+        <view class = "form-item">正常</view>
+    </view>
+
+    <!--表格-内容-高度特殊-->
+    <view class = "form-special form-content">
+        <view class = "form-item">表格-内容</view>
+        <view class = "form-item">高度特殊</view>
+    </view>
+
+    <!--表格-内容-高度超特殊-->
+    <view class = "form-superSpecial form-content">
+        <view class = "form-item">表格-内容</view>
+        <view class = "form-item">高度超特殊</view>
+    </view>
+
+    <!--表格分割线-->
+    <view class = "form-separateLine"></view> 
+
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>首层列表项ul</view>
+    <view class = "list-li"><text class = "empty-point">。</text>第二层列表项li</view>
+
+    <!--图片介绍-->
+    <view class = "introduction-image-view">
+        <image class = "introduction-image-first" src="{{images[0]}}"></image>
+    </view>
+    
+</view>

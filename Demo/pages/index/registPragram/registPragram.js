@@ -1,4 +1,5 @@
 // pages/index/registPragram/registPragram.js
+var common = require('../alert.js')
 Page({
   data:{
     codes : [
@@ -7,15 +8,7 @@ Page({
     ],
   },
   jump:function(){
-    wx.showModal({
-      title: '提示',
-      content: '敬请期待',
-       success: function(res) {
-        if (res.confirm) {
-          // console.log('用户点击确定')
-        }
-      }
-    })
+    common.showAlert()
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
