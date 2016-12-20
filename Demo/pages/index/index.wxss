@@ -11,7 +11,7 @@
   flex: 1;
 
   /*有四个值，上右下左*/
-  margin: 10rpx;
+  margin: 5px 0px 5px 0px;
 
   /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
   display: flex;

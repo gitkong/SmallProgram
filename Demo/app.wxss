@@ -1,9 +1,9 @@
 /**app.wxss**/
 .contrainer {
-  /*height: 100%;*/
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
 } 
 
 /*-------------------------------------------作者信息-------------------------------------------------*/
@@ -85,7 +85,7 @@
 }
 
 .form-separateLine{
-    margin: 0px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
     background-color: lightgrey;
     height: 1px;
 }
@@ -118,7 +118,7 @@
 .form-introduction{
     font-size: 14px;
     /*padding: 0px 5px 0px 5px;*/
-    margin: 10px 0px 10px 5px;
+    margin: 10px 5px 10px 5px;
     color: #515151;
 }
 
