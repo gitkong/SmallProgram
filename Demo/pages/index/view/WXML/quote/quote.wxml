@@ -1,2 +1,43 @@
 <!--pages/index/view/WXML/quote/quote.wxml-->
-<text>pages/index/view/WXML/quote/quote.wxml</text>
+<!--引入模板-->
+<import src="../../../../../template.wxml"/>
+<!--总容器-->
+<view class="contrainer">
+    <!--标题-->
+    <template is="title" data="{{title : '引用'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction">WXML 提供两种文件引用方式<text class = "code-text">import</text>和<text class = "code-text">include</text>。</view>
+    <!--小标题-->
+    <template is="child-title" data="{{title : 'import'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">import</text>可以在该文件中使用目标文件定义的<text class = "code-text">template</text>，如：。</view>
+    <view class = "form-introduction">在 item.wxml 中定义了一个叫<text class = "code-text">item</text>的<text class = "code-text">template</text>：</view>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[0]}}"/>
+    <!--介绍-->
+    <view class = "form-introduction">在 index.wxml 中引用了 item.wxml，就可以使用<text class = "code-text">item</text>模板：</view>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[1]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{title : 'include'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : 'import 有作用域的概念，即只会 import 目标文件中定义的 template，而不会 import 目标文件 import 的 template。'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction blod">如：C import B，B import A，在C中可以使用B定义的<text class = "code-text">template</text>，在B中可以使用A定义的<text class = "code-text">template</text>，但是C不能使用A定义的<text class = "code-text">template</text>。</view>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[2]}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[3]}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[4]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{title : 'import 的作用域'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">include</text>可以将目标文件除了<text class = "code-text">{{tranferTexts[0]}}</text> 的整个代码引入，相当于是拷贝到<text class = "code-text">include</text>位置，如：</view>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[5]}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[6]}}"/>
+</view>

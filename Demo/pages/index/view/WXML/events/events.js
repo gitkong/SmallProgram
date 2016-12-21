@@ -2,13 +2,6 @@
 var common = require('../../../../../alert.js')
 Page({
   data:{
-    ul_text : '',
-    li_text : '',
-    title : '',
-    child_title : '',
-    introduction : '',
-    attention : '',
-    code : '',
     codes : [
       '<view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>',
 
@@ -29,8 +22,6 @@ Page({
       '<scroll-view/>',
       '<canvas/>',
     ],
-
-    form : [],
     forms : [
             [
               {

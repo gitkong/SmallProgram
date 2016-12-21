@@ -11,7 +11,7 @@
 
 <template name="child-title">
     <!--小标题-->
-    <view class = "title">{{child_title}}</view>
+    <view class = "child-title">{{title}}</view>
 </template>
 
 

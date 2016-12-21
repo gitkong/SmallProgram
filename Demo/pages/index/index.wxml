@@ -27,7 +27,7 @@
 
   <!--换了种方式实现，利用json动态修改，遍历创建，减少代码，方便维护-->
   <block wx:for-items="{{items}}" wx:for-item="frameItem">
-    <navigator url="{{frameItem.url}}" hover-class="none" bindtap="bindViewTap" class="frame-item" id="{{frameItem.name}}" data-index="{{index}}">
+    <navigator url="{{frameItem.url}}" hover-class="none" bindtap="bindViewTap" class="frame-item" id="{{frameItem.name}}" data-index="{{index + 1}}">
       <text class="frame-name">{{frameItem.name}}</text>
       <image class="frame-img {{frameItem.isShow ? 'open' : 'close'}}" src="{{frameItem.arrowImagePath}}" />
     </navigator>
@@ -35,7 +35,7 @@
     <!--第二层-->
     <view class="frame-detail-view {{frameItem.isShow ? 'frame-detail-view-show' : ''}}">
       <block wx:for-items="{{frameItem.detailItems}}" wx:for-item="detailFrameItem" wx:for-index="detailIndex">        
-        <navigator url="{{detailFrameItem.detailUrl}}" hover-class="none"  bindtap="bindViewTap" class="detail-frame-item" id="{{detailFrameItem.detailName}}" data-index="{{index}}" data-detailIndex="{{detailIndex}}">
+        <navigator url="{{detailFrameItem.detailUrl}}" hover-class="none"  bindtap="bindViewTap" class="detail-frame-item" id="{{detailFrameItem.detailName}}" data-index="{{index + 1}}" data-detailIndex="{{detailIndex + 1}}">
           <text class="frame-detail-name">{{detailFrameItem.detailName}}</text>
           <image class="frame-img {{detailFrameItem.detailIsShow ? 'open' : 'close'}}" src="{{detailFrameItem.detailArrowImagePath}}" background-size="cover" />
         </navigator>
@@ -44,7 +44,7 @@
         <!--第三层-->
         <view class="frame-detail-view {{detailFrameItem.detailIsShow ? 'frame-detail-view-show' : ''}}">
           <block wx:for-items="{{detailFrameItem.detailDetailItems}}" wx:for-item="detailDetailFrameItem" wx:for-index="detailDetailIndex">
-            <navigator url="{{detailDetailFrameItem.detailDetailUrl}}" hover-class="none" bindtap="bindViewTap" class="detail-frame-item" id="{{detailDetailFrameItem.detailDetailName}}" data-index="{{index}}" data-detailIndex="{{detailIndex}}" data-detailDetailIndex="{{detailDetailIndex}}">
+            <navigator url="{{detailDetailFrameItem.detailDetailUrl}}" hover-class="none" bindtap="bindViewTap" class="detail-frame-item" id="{{detailDetailFrameItem.detailDetailName}}" data-index="{{index + 1}}" data-detailIndex="{{detailIndex + 1}}" data-detailDetailIndex="{{detailDetailIndex + 1}}">
               <text class="frame-detail-detail-name">{{detailDetailFrameItem.detailDetailName}}</text>
               <image class="frame-img {{detailFrameItem.detailDetailIsShow ? 'open' : 'close'}}" src="{{detailDetailFrameItem.detailDetailArrowImagePath}}" background-size="cover" />
             </navigator>
