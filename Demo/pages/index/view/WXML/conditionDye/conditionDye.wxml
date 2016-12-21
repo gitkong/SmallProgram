@@ -1,2 +1,42 @@
 <!--pages/index/view/WXML/conditionDye/conditionDye.wxml-->
-<text>pages/index/view/WXML/conditionDye/conditionDye.wxml</text>
+
+<!--总容器-->
+<view class="contrainer">
+
+    <!--标题-->
+    <view class = "title">条件渲染</view>
+    <!--小标题-->
+    <view class = "child-title">wx:if</view>
+    <!--介绍-->
+    <view class = "form-introduction">在框架中，我们用<text class = "code-text">wx:if="{{condition}}"</text>来判断是否需要渲染该代码块：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction">也可以用<text class = "code-text">wx:elif</text>和<text class = "code-text">wx:else</text>来添加一个 else 块：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[1]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">block wx:if</view>
+    <!--介绍-->
+    <view class = "form-introduction">因为<text class = "code-text">wx:if</text>是一个控制属性，需要将它添加到一个标签上。但是如果我们想一次性判断多个组件标签，我们可以使用一个<text class = "code-text">{{tranferText}}</text>标签将多个组件包装起来，并在上边使用<text class = "code-text">wx:if</text>控制属性。</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[2]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "blod">注意：</text><text class = "code-text">{{tranferText}}</text>并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。</view>
+
+    <view class = "child-title"><text class = "code-text">wx:if</text> vs <text class = "code-text">hidden</text></view>
+    <!--介绍-->
+    <view class = "form-introduction">因为<text class = "code-text">wx:if</text>之中的模板也可能包含数据绑定，所有当<text class = "code-text">wx:if</text>的条件值切换时，框架有一个局部渲染的过程，因为它会确保条件块在切换时销毁或重新渲染。</view>
+    <!--介绍-->
+    <view class = "form-introduction">同时<text class = "code-text">wx:if</text>也是惰性的，如果在初始渲染条件为<text class = "code-text">false</text>，框架什么也不做，在条件第一次变成真的时候才开始局部渲染。</view>
+    <view class = "form-introduction">相比之下，<text class = "code-text">hidden</text>就简单的多，组件始终会被渲染，只是简单的控制显示与隐藏。</view>
+    <view class = "form-introduction">一般来说，<text class = "code-text">wx:if</text>有更高的切换消耗而<text class = "code-text">hidden</text>有更高的初始渲染消耗。因此，如果需要频繁切换的情景下，用<text class = "code-text">hidden</text>更好，如果在运行时条件不大可能改变则<text class = "code-text">wx:if</text>较好。</view>
+    
+</view>
