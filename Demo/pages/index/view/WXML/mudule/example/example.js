@@ -3,8 +3,11 @@ var common = require('../../../../../../alert.js')
 Page({
   data:{
     title : 'hello world',
+    child_title : '我来给你演示一下',
     forms : [
-            {
+            [
+              {
+               isSuperSpecial : false,
                isSpecial : false,
                isTitle : true,
                contents : [
@@ -23,7 +26,8 @@ Page({
                ]
             },
             {
-               isSpecial : false,
+               isSuperSpecial : false,
+               isSpecial : true,
                isTitle : false,
                contents : [
                    {
@@ -41,6 +45,7 @@ Page({
                ]
             },
             {
+               isSuperSpecial : true,
                isSpecial : false,
                isTitle : false,
                contents : [
@@ -58,6 +63,7 @@ Page({
                    },
                ]
             },
+            ],
         ],
   },
   jump:function(){

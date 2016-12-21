@@ -20,6 +20,8 @@
     <view class = "form-introduction">函数用于获取当前页面栈的实例，以数组形式按栈的顺序给出，第一个元素为首页，最后一个元素为当前页面。</view>
     <!--介绍，粗体-->
     <view class = "form-introduction blod">示例代码：</view>
+    <!--介绍，左边间隔-->
+    <view class = "form-introduction padding">示例代码：</view>
     <!--注意-->
     <view class = "form-attention">注意：不要尝试修改页面栈，会导致路由以及页面状态错误。</view>
     
@@ -66,6 +68,6 @@
 
     <!--图片介绍-->
     <view class = "introduction-image-view">
-        <image class = "introduction-image-first" src="{{images[0]}}"></image>
+        <image class = "introduction-image" src="{{images[0]}}"></image>
     </view>
     

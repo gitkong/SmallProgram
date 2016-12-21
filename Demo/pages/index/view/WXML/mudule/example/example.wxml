@@ -1,10 +1,14 @@
 <!--pages/index/view/WXML/mudule/example/example.wxml-->
+
+<!--引入模板-->
 <import src="../../../../../../template.wxml"/>
 
 <view class = "contrainer">
+    <!--标题模板-->
     <template is="title" data="{{title : 'hello'}}"/>
-
-
-    <template is="form" data="{{forms}}"/>
+    <!--标题模板-->
+    <template is="child-title" data="{{child_title}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[0]}}"/>
     
 </view>

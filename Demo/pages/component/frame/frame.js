@@ -3,6 +3,9 @@ var common = require('../../../alert.js')
 Page({
   data:{
     title : 'hello world',
+    image : '',
+    imageHeight : '',
+    imageWidth : '',
     forms : [
             {
                isSpecial : false,

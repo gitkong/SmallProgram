@@ -29,7 +29,7 @@
 /*-------------------------------------------表格-------------------------------------------------*/
 .contrainer .form{
     /*width: 100%;*/
-    height: 60px;
+    height: 80px;
     /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@
 /*高度特殊的表格*/
 .contrainer .form-special{
     /*width: 100%;*/
-    height: 90px;
+    height: 100px;
     /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
     display: flex;
     flex-direction: row;
@@ -59,7 +59,7 @@
 /*高度特殊的表格*/
 .contrainer .form-superSpecial{
     /*width: 100%;*/
-    height: 120px;
+    height: 140px;
     /*素内弹性盒元素的方向,row|row-reverse|column|column-reverse|initial|inherit;*//*row 是水平向右，默认的*/
     display: flex;
     flex-direction: row;

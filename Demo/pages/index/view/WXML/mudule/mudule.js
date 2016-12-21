@@ -1,5 +1,5 @@
 // pages/index/view/WXML/mudule/mudule.js
-// var common = require('../../../../alert.js')
+var common = require('../../../../../alert.js')
 Page({
   data:{
     tranferTexts : [

@@ -1,28 +1,145 @@
 <!--pages/index/view/WXML/events/events.wxml-->
+<!--引入模板-->
+<import src="../../../../../template.wxml"/>
 
 <!--总容器-->
 <view class="contrainer">
 
     <!--标题-->
-    <view class = "title">事件</view>
+    <template is="title" data="{{title : '事件'}}"/>
     <!--小标题-->
-    <view class = "child-title">什么是事件</view>
+    <template is="child-title" data="{{child_title : '什么是事件'}}"/>
     <!--列表，点的形式-->
-    <view class = "list-ul"><text class = "solid-point">.</text>事件是视图层到逻辑层的通讯方式。</view>
-    <view class = "list-ul"><text class = "solid-point">.</text>事件可以将用户的行为反馈到逻辑层进行处理。</view>
-    <view class = "list-ul"><text class = "solid-point">.</text>事件可以绑定在组件上，当达到触发事件，就会执行逻辑层中对应的事件处理函数。</view>
-    <view class = "list-ul"><text class = "solid-point">.</text>事件对象可以携带额外信息，如 id, dataset, touches。</view>
-            
+    <template is="solid-point" data="{{ul_text : '事件是视图层到逻辑层的通讯方式。'}}"/>
+    <template is="solid-point" data="{{ul_text : '事件可以将用户的行为反馈到逻辑层进行处理。'}}"/>
+    <template is="solid-point" data="{{ul_text : '事件可以绑定在组件上，当达到触发事件，就会执行逻辑层中对应的事件处理函数。'}}"/>
+    <template is="solid-point" data="{{ul_text : '事件对象可以携带额外信息，如 id, dataset, touches。'}}"/>
+      
     <!--小标题-->
-    <view class = "child-title">事件的使用方式</view>
+    <template is="child-title" data="{{child_title : '事件的使用方式'}}"/>
     <!--列表，点的形式-->
-    <view class = "list-ul"><text class = "solid-point">.</text>在组件中绑定一个事件处理函数。</view>
+    <template is="solid-point" data="{{ul_text : '在组件中绑定一个事件处理函数。'}}"/>
     <!--介绍-->
     <view class = "form-introduction">如<text class = "code-text">bindtap</text> ，当用户点击该组件的时候会在该页面对应的Page中找到相应的事件处理函数。</view>
     <!--代码块-->
-    <view class = "code-block-js">
-        <text>{{codes[0]}}</text>
-    </view>
+    <template is="code-block-js" data="{{code : codes[0]}}"/>
     <!--列表，点的形式-->
-    <view class = "list-ul"><text class = "solid-point">.</text>在相应的Page定义中写上相应的事件处理函数，参数是event。</view>
+    <template is="solid-point" data="{{ul_text : '在相应的Page定义中写上相应的事件处理函数，参数是event。'}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[1]}}"/>
+
+    <!--列表，点的形式-->
+    <template is="solid-point" data="{{ul_text : '可以看到log出来的信息大致如下：'}}"/>
+    <!--代码块-->
+    <template is="code-block-json" data="{{code : codes[2]}}"/>
+
+    <!--标题-->
+    <template is="title" data="{{title : '事件详解'}}"/>
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : '事件分类'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '事件分为冒泡事件和非冒泡事件：'}}"/>
+    <template is="introduction-padding" data="{{introduction : '1.冒泡事件：当一个组件上的事件被触发后，该事件会向父节点传递。'}}"/>
+    <template is="introduction-padding" data="{{introduction : '2.非冒泡事件：当一个组件上的事件被触发后，该事件不会向父节点传递。'}}"/>
+    <template is="introduction" data="{{introduction : 'WXML的冒泡事件列表：'}}"/>
+
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[0]}}"/>
+    
+    <!--注意-->
+    <view class = "form-attention">注：除上表之外的其他组件自定义事件如无特殊申明都是非冒泡事件，如<text class = "code-text" bindtap = "jump"><text class = "jump">{{tranferTexts[0]}}</text></text>的<text class = "code-text">submit</text>事件，<text class = "code-text" bindtap = "jump"><text class = "jump">{{tranferTexts[1]}}</text></text>的input事件，<text class = "code-text" bindtap = "jump"><text class = "jump">{{tranferTexts[2]}}</text></text>的<text class = "code-text">scroll</text>事件，(详见各个<text class = "jump" bindtap = "jump">组件</text>)</view>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : '事件绑定'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '事件绑定的写法同组件的属性，以 key、value 的形式。'}}"/>
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>key 以<text class = "code-text">bind</text>或<text class = "code-text">catch</text>开头，然后跟上事件的类型，如<text class = "code-text">bindtap</text>, <text class = "code-text">catchtouchstart</text></view>
+    <template is="solid-point" data="{{ul_text : 'value 是一个字符串，需要在对应的 Page 中定义同名的函数。不然当触发事件的时候会报错。'}}"/>
+
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">bind</text>事件绑定不会阻止冒泡事件向上冒泡，<text class = "code-text">catch</text>事件绑定可以阻止冒泡事件向上冒泡。</view>
+    <view class = "form-introduction">如在下边这个例子中，点击 inner view 会先后触发<text class = "code-text">handleTap3</text>和<text class = "code-text">handleTap2</text>(因为tap事件会冒泡到 middle view，而 middle view 阻止了 tap 事件冒泡，不再向父节点传递)，点击 middle view 会触发<text class = "code-text">handleTap2</text>，点击 outter view 会触发<text class = "code-text">handleTap1</text>。</view>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[3]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : '事件对象'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '如无特殊说明，当组件触发事件时，逻辑层绑定该事件的处理函数会收到一个事件对象。'}}"/>
+    <template is="introduction-bold" data="{{introduction : 'BaseEvent 基础事件对象属性列表：'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[1]}}"/>
+
+    <!--介绍-->
+    <template is="introduction-bold" data="{{introduction : 'CustomEvent 自定义事件对象属性列表（继承 BaseEvent）：'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[2]}}"/>
+
+    <!--介绍-->
+    <template is="introduction-bold" data="{{introduction : 'TouchEvent 触摸事件对象属性列表（继承 BaseEvent）：'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[3]}}"/>
+    <!--注意-->
+    <view class = "form-attention">特殊事件:<text class = "code-text">{{tranferTexts[3]}}</text> 中的触摸事件不可冒泡，所以没有 currentTarget。</view>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'type'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '代表事件的类型。'}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'timeStamp'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '页面打开到触发事件所经过的毫秒数。'}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'target'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '触发事件的源组件。'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[4]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'currentTarget'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '事件绑定的当前组件。'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[5]}}"/>
+
+     <!--注意-->
+    <view class = "form-attention">说明： target 和 currentTarget 可以参考上例中，点击 inner view 时，<text class = "code-text">handleTap3</text>收到的事件对象 target 和 currentTarget 都是 inner，而<text class = "code-text">handleTap2</text>收到的事件对象 target 就是 inner，currentTarget 就是 middle。</view>
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'dataset'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction">函在组件中可以定义数据，这些数据将会通过事件传递给 SERVICE。 书写方式： 以<text class = "code-text">data-</text>开头，多个单词由连字符-链接，不能有大写(大写会自动转成小写)如<text class = "code-text">data-element-type</text>，最终在 event.target.dataset 中会将连字符转成驼峰<text class = "code-text">elementType</text>。</view>
+    <!--介绍-->
+    <template is="introduction-bold" data="{{introduction : '示例：'}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[4]}}"/>
+    <template is="code-block-js" data="{{code : codes[5]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'touches'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : 'touches 是一个数组，每个元素为一个 Touch 对象（canvas 触摸事件中携带的 touches 是 CanvasTouch 数组）。 表示当前停留在屏幕上的触摸点。'}}"/>
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'Touch 对象'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[6]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'CanvasTouch 对象'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[7]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'changedTouches'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : 'changedTouches 数据格式同 touches。 表示有变化的触摸点，如从无变有（touchstart），位置变化（touchmove），从有变无（touchend、touchcancel）。'}}"/>
+    
+    <!--小标题-->
+    <template is="child-title" data="{{child_title : 'detail'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction">自定义事件所携带的数据，如表单组件的提交事件会携带用户的输入，媒体的错误事件会携带错误信息，详见<text class = "jump" bindtap = "jump">组件</text>定义中各个事件的定义。</view>
 </view>
