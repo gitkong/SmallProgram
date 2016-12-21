@@ -1,2 +1,68 @@
 <!--pages/index/view/WXML/listDye/listDye.wxml-->
-<text>pages/index/view/WXML/listDye/listDye.wxml</text>
+<!--总容器-->
+<view class="contrainer">
+
+    <!--标题-->
+    <view class = "title">列表渲染</view>
+    <!--小标题-->
+    <view class = "child-title">wx:for</view>
+    <!--介绍-->
+    <view class = "form-introduction">在组件上使用<text class = "code-text">wx:for</text>控制属性绑定一个数组，即可使用数组中各项的数据重复渲染该组件。</view>
+    <view class = "form-introduction">默认数组的当前项的下标变量名默认为<text class = "code-text">index</text>，数组当前项的变量名默认为<text class = "code-text">item</text></view>
+    
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[1]}}</text>
+    </view>
+
+
+    <!--介绍-->
+    <view class = "form-introduction">使用<text class = "code-text">wx:for-item</text>可以指定数组当前元素的变量名，</view>
+    <view class = "form-introduction">使用<text class = "code-text">wx:for-index</text>可以指定数组当前下标的变量名：</view>
+    
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[2]}}</text>
+    </view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">wx:for</text>也可以嵌套，下边是一个九九乘法表</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[3]}}</text>
+    </view>
+
+
+    <!--小标题-->
+    <view class = "child-title">block wx:for</view>
+    <!--介绍-->
+    <view class = "form-introduction">类似<text class = "code-text">block wx:if</text> ，也可以将<text class = "code-text">wx:for</text>用在<text class = "code-text">{{tranferTexts[0]}}</text>标签上，以渲染一个包含多节点的结构块。例如：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[4]}}</text>
+    </view>
+
+    <!--小标题-->
+    <view class = "child-title">wx:key</view>
+    <!--介绍-->
+    <view class = "form-introduction">如果列表中项目的位置会动态改变或者有新的项目添加到列表中，并且希望列表中的项目保持自己的特征和状态（如<text class = "code-text">{{tranferTexts[1]}}</text>中的输入内容，<text class = "code-text">{{tranferTexts[2]}}</text>的选中状态），需要使用<text class = "code-text">wx:key</text>来指定列表中项目的唯一的标识符。</view>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "code-text">wx:key</text>的值以两种形式提供</view>
+
+    <view class = "form-introduction padding">1.字符串，代表在 for 循环的 array 中 item 的某个 property，该 property 的值需要是列表中唯一的字符串或数字，且不能动态改变。</view>
+    <view class = "form-introduction padding">2.保留关键字<text class = "code-text">*this</text>代表在 for 循环中的 item 本身，这种表示需要 item 本身是一个唯一的字符串或者数字，如：</view>
+    <view class = "form-introduction">当数据改变触发渲染层重新渲染的时候，会校正带有 key 的组件，框架会确保他们被重新排序，而不是重新创建，以确保使组件保持自身的状态，并且提高列表渲染时的效率。</view>
+    
+    <!--粗体-->
+    <view class = "form-introduction blod">如不提供<text class = "code-text">wx:key</text>，会报一个<text class = "code-text">warning</text>， 如果明确知道该列表是静态，或者不必关注其顺序，可以选择忽略。</view>
+    <view class = "form-introduction blod">示例代码：</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[5]}}</text>
+    </view>
+    <view class = "code-block-js">
+        <text>{{codes[6]}}</text>
+    </view>
+</view>

@@ -122,6 +122,10 @@
     color: #515151;
 }
 
+.padding{
+    padding-left: 10px;
+}
+
 .blod{
     font-weight:bold;
     font-size: 15px;
