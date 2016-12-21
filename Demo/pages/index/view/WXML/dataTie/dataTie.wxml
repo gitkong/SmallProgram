@@ -58,7 +58,7 @@
     <!--小标题-->
     <view class = "child-title">运算</view>
     <!--介绍-->
-    <view class = "form-introduction">可以在<text class = "code-text">{{}}</text>内进行简单的运算，支持的有如下几种方式：</view>
+    <view class = "form-introduction">可以在<text class = "code-text">{{tranferText}}</text>内进行简单的运算，支持的有如下几种方式：</view>
 
     <!--小标题-->
     <view class = "child-title">三元运算</view>

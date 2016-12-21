@@ -1,3 +1,12 @@
+<!--定义模板-->
+<template name="title">
+    <!--标题-->
+    <view class = "title">{{title}}</view>
+</template>
+
+
+
+
 
 <!--总容器-->
 <view class="contrainer">
@@ -16,6 +25,9 @@
     
     <!--代码块-->
     <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <view class = "code-block-json">
         <text>{{codes[0]}}</text>
     </view>
     <!--段落内代码块-->

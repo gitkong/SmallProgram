@@ -2,6 +2,7 @@
 var common = require('../../../../alert.js')
 Page({
   data:{
+    title : 'sssss',
     codes:[
       '// app.js\nApp({\n  globalData: 1\n})',
 

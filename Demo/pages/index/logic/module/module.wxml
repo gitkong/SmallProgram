@@ -1,6 +1,8 @@
 <!--pages/index/module/module.wxml-->
+<!--<import src="../../../../tip.wxml"/>-->
 
 <view class="contrainer">
+    <!--<template is="title" data="{{title}}"/>-->
     <!--小标题-->
     <view class = "child-title">文件作用域</view>
     <!--介绍-->

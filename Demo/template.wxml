@@ -1,0 +1,65 @@
+
+
+<!--定义模板-->
+
+
+
+<template name="title">
+    <!--标题-->
+    <view class = "title">{{title}}</view>
+</template>
+
+<template name="child-title">
+    <!--小标题-->
+    <view class = "title">{{child-title}}</view>
+</template>
+
+
+<template name="solid-point">
+    <!--列表，实心点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>{{ul-text}}</view>
+</template>
+
+<template name="empty-point">
+    <!--列表，空心点的形式-->
+    <view class = "list-li"><text class = "empty-point">。</text>{{li-text}}</view>
+</template>
+
+
+
+<template name="code-block-js">
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{code-js}}</text>
+    </view>
+</template>
+
+<template name="code-block-json">
+    <!--代码块-->
+    <view class = "code-block-json">
+        <text>{{code-json}}</text>
+    </view>
+</template>
+
+
+
+<!--表格-只有两种高度-->
+<template name="form">
+    <block wx:for-items="{{forms}}" wx:for-item="item">
+        <view class = "{{item.isSpecial ? 'form-special' : 'form'}} {{item.isTitle ? 'form-title' : 'form-content'}}">
+            <block wx:for-items="{{item.contents}}" wx:for-item="content">
+                <view class = "form-item {{content.isJump ? 'jump' : ''}}" bindtap = "{{content.isJump ? 'jump' : ''}}">{{content.text}}</view>
+            </block>
+        </view>
+        <!--表格分割线-->
+        <view class = "form-separateLine"></view> 
+    </block>
+    
+</template>
+
+
+
+<template name="empty-point">
+    <!--列表，空心点的形式-->
+    <view class = "list-li"><text class = "empty-point">。</text>{{li-text}}</view>
+</template>

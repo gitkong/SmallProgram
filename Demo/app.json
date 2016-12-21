@@ -13,6 +13,7 @@
     "pages/index/view/WXML/conditionDye/conditionDye",
     "pages/index/view/WXML/listDye/listDye",
     "pages/index/view/WXML/mudule/mudule",
+    "pages/index/view/WXML/mudule/example/example",
     "pages/index/view/WXML/events/events",
     "pages/index/view/WXML/quote/quote",
 

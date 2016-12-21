@@ -1,4 +1,17 @@
 <!--pages/component/frame/frame.wxml-->
-<view class = "contrainer">
 
+<!--定义模板-->
+<!--<template name="title">-->
+    <!--标题-->
+    <!--<view class = "title">{{title}}</view>
+</template>-->
+
+<import src="../../../template.wxml"/>
+
+<view class = "contrainer">
+    <template is="title" data="{{title : 'hello'}}"/>
+
+
+    <template is="form" data="{{forms}}"/>
+    
 </view>

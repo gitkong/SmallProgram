@@ -52,6 +52,8 @@ Page({
 
       'Page({\n  data: {\n    obj1: {\n      a: 1,\n      b: 2\n    },\n    obj2: {\n      c: 3,\n      d: 4,\n  a: 5\n  }\n  }\n})',
     ],
+
+    tranferText:'{{}}',
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数

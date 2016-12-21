@@ -1,0 +1,10 @@
+<!--pages/index/view/WXML/mudule/example/example.wxml-->
+<import src="../../../../../../template.wxml"/>
+
+<view class = "contrainer">
+    <template is="title" data="{{title : 'hello'}}"/>
+
+
+    <template is="form" data="{{forms}}"/>
+    
+</view>

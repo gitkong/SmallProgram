@@ -1,2 +1,28 @@
 <!--pages/index/view/WXML/events/events.wxml-->
-<text>pages/index/view/WXML/events/events.wxml</text>
+
+<!--总容器-->
+<view class="contrainer">
+
+    <!--标题-->
+    <view class = "title">事件</view>
+    <!--小标题-->
+    <view class = "child-title">什么是事件</view>
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>事件是视图层到逻辑层的通讯方式。</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>事件可以将用户的行为反馈到逻辑层进行处理。</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>事件可以绑定在组件上，当达到触发事件，就会执行逻辑层中对应的事件处理函数。</view>
+    <view class = "list-ul"><text class = "solid-point">.</text>事件对象可以携带额外信息，如 id, dataset, touches。</view>
+            
+    <!--小标题-->
+    <view class = "child-title">事件的使用方式</view>
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>在组件中绑定一个事件处理函数。</view>
+    <!--介绍-->
+    <view class = "form-introduction">如<text class = "code-text">bindtap</text> ，当用户点击该组件的时候会在该页面对应的Page中找到相应的事件处理函数。</view>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <!--列表，点的形式-->
+    <view class = "list-ul"><text class = "solid-point">.</text>在相应的Page定义中写上相应的事件处理函数，参数是event。</view>
+</view>

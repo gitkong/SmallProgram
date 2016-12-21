@@ -1,5 +1,5 @@
-// pages/component/frame/frame.js
-var common = require('../../../alert.js')
+
+var common = require('../../../../../../alert.js')
 Page({
   data:{
     title : 'hello world',
@@ -10,15 +10,15 @@ Page({
                contents : [
                    {
                       isJump : true,
-                      text : 'hello world'
+                      text : 'gitKong1'
                    },
                    {
-                      isJump : true,
-                      text : 'hello world'
+                      isJump : false,
+                      text : 'gitKong2'
                    },
                    {
-                      isJump : true,
-                      text : 'hello world'
+                      isJump : false,
+                      text : 'gitKong3'
                    },
                ]
             },
@@ -27,16 +27,16 @@ Page({
                isTitle : false,
                contents : [
                    {
-                      isJump : false,
-                      text : 'hello gitkong'
+                      isJump : true,
+                      text : 'i'
                    },
                    {
                       isJump : false,
-                      text : 'what'
+                      text : 'love'
                    },
                    {
                       isJump : false,
-                      text : 'hello'
+                      text : 'you'
                    },
                ]
             },
@@ -45,8 +45,16 @@ Page({
                isTitle : false,
                contents : [
                    {
+                      isJump : true,
+                      text : '列'
+                   },
+                   {
                       isJump : false,
-                      text : 'hello world'
+                      text : 'love'
+                   },
+                   {
+                      isJump : false,
+                      text : '凤'
                    },
                ]
             },
