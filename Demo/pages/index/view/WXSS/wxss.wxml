@@ -1,2 +1,104 @@
 <!--pages/index/view/WXSS/wxss.wxml-->
-<text>pages/index/view/WXSS/wxss.wxml</text>
+
+<!--引入模板-->
+<import src="../../../../template.wxml"/>
+
+<!--总容器-->
+<view class="contrainer">
+
+    <!--标题-->
+    <template is="title" data="{{title : 'WXSS'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : 'WXSS(WeiXin Style Sheets)是一套样式语言，用于描述 WXML 的组件样式。'}}"/>
+    <template is="introduction" data="{{introduction : 'WXSS 用来决定 WXML 的组件应该怎么显示。'}}"/>
+    <template is="introduction" data="{{introduction : '为了适应广大的前端开发者，我们的 WXSS 具有 CSS 大部分特性。 同时为了更适合开发微信小程序，我们对 CSS 进行了扩充以及修改。'}}"/>
+    <template is="introduction" data="{{introduction : '与 CSS 相比我们扩展的特性有：'}}"/>
+    <!--列表，点的形式-->
+    <template is="solid-point" data="{{ul_text : '尺寸单位'}}"/>
+    <template is="solid-point" data="{{ul_text : '样式导入'}}"/>
+    
+    <!--小标题-->
+    <template is="child-title" data="{{title : '尺寸单位'}}"/>
+    <!--列表，点的形式-->
+    <template is="solid-point" data="{{ul_text : 'rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。如在 iPhone6 上，屏幕宽度为375px，共有750个物理像素，则750rpx = 375px = 750物理像素，1rpx = 0.5px = 1物理像素。'}}"/>
+    <!--表格模板-->
+    <template is="form" data="{{form : forms[0]}}"/>
+    <!--列表，点的形式-->
+    <template is="solid-point" data="{{ul_text : 'rem（root em）: 规定屏幕宽度为20rem；1rem = (750/20)rpx 。'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction"><text class = "blod">建议</text>： 开发微信小程序时设计师可以用 iPhone6 作为视觉稿的标准。 <text class = "blod">注意</text>： 在较小的屏幕上不可避免的会有一些毛刺，请在开发时尽量避免这种情况。</view>
+    <!--小标题-->
+    <template is="child-title" data="{{title : '样式导入'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction">使用<text class = "text-code">@import</text>语句可以导入外联样式表，<text class = "text-code">@import</text>后跟需要导入的外联样式表的相对路径，用<text class = "text-code">;</text>表示语句结束。</view>
+    <!--介绍-->
+    <template is="introduction-bold" data="{{introduction : '示例代码：'}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[0]}}"/>
+    <template is="code-block-js" data="{{code : codes[1]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{title : '内联样式'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '框架组件上支持使用 style、class 属性来控制组件的样式。'}}"/>
+    <!--列表，点的形式-->
+    <template is="solid-point" data="{{ul_text : 'style：静态的样式统一写到 class 中。style 接收动态的样式，在运行时会进行解析，请尽量避免将静态的样式写进 style 中，以免影响渲染速度。'}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[2]}}"/>
+    <!--列表，点的形式-->
+    <template is="solid-point" data="{{ul_text : 'class：用于指定样式规则，其属性值是样式规则中类选择器名(样式类名)的集合，样式类名不需要带上.，样式类名之间用空格分隔。'}}"/>
+    <!--代码块-->
+    <template is="code-block-js" data="{{code : codes[3]}}"/>
+
+    <!--小标题-->
+    <template is="child-title" data="{{title : '选择器'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '目前支持的选择器有：'}}"/>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">选择器</view>
+        <view class = "form-item">样例</view>
+        <view class = "form-item">样例描述</view>
+    </view>
+    <view class = "form form-content">
+        <view class = "form-item">.class</view>
+        <view class = "form-item"><text class = "code-text">.intro</text></view>
+        <view class = "form-item">选择所有拥有 class="intro" 的组件</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">#id</view>
+        <view class = "form-item"><text class = "code-text">#firstname</text></view>
+        <view class = "form-item">选择拥有 id="firstname" 的组件</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">element</view>
+        <view class = "form-item"><text class = "code-text">view</text></view>
+        <view class = "form-item">选择所有 view 组件</view>
+    </view>
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">element,\nelement</view>
+        <view class = "form-item"><text class = "code-text">view,\ncheckbox</text></view>
+        <view class = "form-item">选择所有文档的 view 组件和所有的 checkbox 组件</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form form-content">
+        <view class = "form-item">::after</view>
+        <view class = "form-item"><text class = "code-text">view::after</text></view>
+        <view class = "form-item">在 view 组件后边插入内容</view>
+    </view>
+    <view class = "form-separateLine"></view>
+    <view class = "form form-content">
+        <view class = "form-item">::before</view>
+        <view class = "form-item"><text class = "code-text">view::before</text></view>
+        <view class = "form-item">在 view 组件前边插入内容</view>
+    </view>
+    <view class = "form-separateLine"></view>
+
+    <!--小标题-->
+    <template is="child-title" data="{{title : '全局样式与局部样式'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '定义在 app.wxss 中的样式为全局样式，作用于每一个页面。在 page 的 wxss 文件中定义的样式为局部样式，只作用在对应的页面，并会覆盖 app.wxss 中相同的选择器。'}}"/>
+</view>

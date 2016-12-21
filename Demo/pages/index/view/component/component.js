@@ -1,6 +1,10 @@
 // pages/index/view/component/component.js
+var common = require('../../../../alert.js')
 Page({
   data:{},
+  jump:function(){
+    common.showAlert()
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },

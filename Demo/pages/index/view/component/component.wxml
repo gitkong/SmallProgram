@@ -1,2 +1,17 @@
 <!--pages/index/view/component/component.wxml-->
-<text>pages/index/view/component/component.wxml</text>
+<!--引入模板-->
+<import src="../../../../template.wxml"/>
+<!--总容器-->
+<view class="contrainer">
+    <!--标题-->
+    <template is="title" data="{{title : '基础组件'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '框架为开发者提供了一系列基础组件，开发者可以通过组合这些基础组件进行快速开发。'}}"/>
+    <!--介绍-->
+    <view class = "form-introduction">详细介绍请参考<text class = "jump" bindtap = "jump">组件文档</text></view>
+</view>
+
+
+
+
+

@@ -274,7 +274,9 @@ Page({
     }
     this.setData(data)
   },
-
+  onShareAppMessage:function(){
+    
+  },
   
   onLoad: function () {
     var that = this

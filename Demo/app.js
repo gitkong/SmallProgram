@@ -24,6 +24,9 @@ App({
       })
     }
   },
+  onShareAppMessage:function(){
+    
+  },
   globalData:{
     userInfo:null
   }
