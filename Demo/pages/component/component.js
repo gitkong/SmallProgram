@@ -32,7 +32,7 @@ Page({
             detailDetailItems:[]
           },
           {
-            detailName : 'swipper',
+            detailName : 'swiper',
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
@@ -132,6 +132,14 @@ Page({
             detailDetailItems:[]
           },
           {
+            detailName : 'picker-view',
+            detailArrowImagePath : "../../image/arrowright.png" ,
+            detailIsShow : false,
+            detailIsLevels : false,
+            detailUrl : 'frame/frame',
+            detailDetailItems:[]
+          },
+          {
             detailName : 'radio',
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
@@ -166,47 +174,47 @@ Page({
           
         ]
       },
-      {
-        name : '操作反馈',
-        arrowImagePath : "../../image/arrowright.png"  ,
-        isShow : false,
-        isLevels : true,
-        url : '',
-        detailItems:[
-          {
-            detailName : 'action-sheet',
-            detailArrowImagePath : "../../image/arrowright.png" ,
-            detailIsShow : false,
-            detailIsLevels : false,
-            detailUrl : '',
-            detailDetailItems:[]
-          },
-          {
-            detailName : 'modal',
-            detailArrowImagePath : "../../image/arrowright.png" ,
-            detailIsShow : false,
-            detailIsLevels : false,
-            detailUrl : 'frame/frame',
-            detailDetailItems:[]
-          },
-          {
-            detailName : 'toast',
-            detailArrowImagePath : "../../image/arrowright.png" ,
-            detailIsShow : false,
-            detailIsLevels : false,
-            detailUrl : 'frame/frame',
-            detailDetailItems:[]
-          },
-          {
-            detailName : 'loading',
-            detailArrowImagePath : "../../image/arrowright.png" ,
-            detailIsShow : false,
-            detailIsLevels : false,
-            detailUrl : 'frame/frame',
-            detailDetailItems:[]
-          }
-        ]
-      },
+      // {
+      //   name : '操作反馈',
+      //   arrowImagePath : "../../image/arrowright.png"  ,
+      //   isShow : false,
+      //   isLevels : true,
+      //   url : '',
+      //   detailItems:[
+      //     {
+      //       detailName : 'action-sheet',
+      //       detailArrowImagePath : "../../image/arrowright.png" ,
+      //       detailIsShow : false,
+      //       detailIsLevels : false,
+      //       detailUrl : '',
+      //       detailDetailItems:[]
+      //     },
+      //     {
+      //       detailName : 'modal',
+      //       detailArrowImagePath : "../../image/arrowright.png" ,
+      //       detailIsShow : false,
+      //       detailIsLevels : false,
+      //       detailUrl : 'frame/frame',
+      //       detailDetailItems:[]
+      //     },
+      //     {
+      //       detailName : 'toast',
+      //       detailArrowImagePath : "../../image/arrowright.png" ,
+      //       detailIsShow : false,
+      //       detailIsLevels : false,
+      //       detailUrl : 'frame/frame',
+      //       detailDetailItems:[]
+      //     },
+      //     {
+      //       detailName : 'loading',
+      //       detailArrowImagePath : "../../image/arrowright.png" ,
+      //       detailIsShow : false,
+      //       detailIsLevels : false,
+      //       detailUrl : 'frame/frame',
+      //       detailDetailItems:[]
+      //     }
+      //   ]
+      // },
       {
         name : '导航',
         arrowImagePath : "../../image/arrowright.png"  ,
@@ -283,6 +291,23 @@ Page({
         detailItems:[
           {
             detailName : 'canvas',
+            detailArrowImagePath : "../../image/arrowright.png" ,
+            detailIsShow : false,
+            detailIsLevels : false,
+            detailUrl : 'frame/frame',
+            detailDetailItems:[]
+          }
+        ]
+      },
+      {
+        name : '客服会话',
+        arrowImagePath : "../../image/arrowright.png"  ,
+        isShow : false,
+        isLevels : true,
+        url : '',
+        detailItems:[
+          {
+            detailName : 'contact-button',
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,

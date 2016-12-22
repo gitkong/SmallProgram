@@ -3,12 +3,10 @@
     "pages/index/index",
     "pages/index/catalogue/catalogue",
     "pages/index/info/info",
-    
     "pages/index/logic/registPragram/registPragram",
     "pages/index/logic/registPages/registPages",
     "pages/index/logic/module/module",
     "pages/index/logic/API/API",
-
     "pages/index/view/WXML/dataTie/dataTie",
     "pages/index/view/WXML/conditionDye/conditionDye",
     "pages/index/view/WXML/listDye/listDye",
@@ -16,15 +14,42 @@
     "pages/index/view/WXML/mudule/example/example",
     "pages/index/view/WXML/events/events",
     "pages/index/view/WXML/quote/quote",
-
     "pages/index/view/WXSS/wxss",
     "pages/index/view/component/component",
 
-    "pages/tool/frame/frame",
+    
     "pages/component/frame/frame",
     "pages/api/frame/frame",
-    
+    "pages/tool/frame/frame",
+
+
     "pages/component/component",
+    "pages/component/viewContainer/view/view",
+    "pages/component/viewContainer/scrollView/scrollView",
+    "pages/component/viewContainer/swiper/swiper",
+    "pages/component/baseContent/icon/icon",
+    "pages/component/baseContent/text/text",
+    "pages/component/baseContent/progress/progress",
+    "pages/component/formComponent/button/button",
+    "pages/component/formComponent/checkbox/checkbox",
+    "pages/component/formComponent/form/form",
+    "pages/component/formComponent/input/input",
+    "pages/component/formComponent/label/label",
+    "pages/component/formComponent/picker/picker",
+    "pages/component/formComponent/pickerView/pickerView",
+    "pages/component/formComponent/radio/radio",
+    "pages/component/formComponent/slider/slider",
+    "pages/component/formComponent/switch/switch",
+    "pages/component/formComponent/textarea/textarea",
+    "pages/component/navigator/navigator",
+    "pages/component/mediaComponent/audio/audio",
+    "pages/component/mediaComponent/image/image",
+    "pages/component/mediaComponent/video/video",
+    "pages/component/map/map",
+    "pages/component/canvas/canvas",
+    "pages/component/contactButton/contactButton",
+    
+
     "pages/api/api",
     "pages/tool/tool"
 
