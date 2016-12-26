@@ -1,2 +1,61 @@
 <!--pages/component/viewContainer/view/view.wxml-->
-<text>pages/component/viewContainer/view/view.wxml</text>
+<!--引入模板-->
+<import src="../../../../template.wxml"/>
+
+<!--总容器-->
+<view class="contrainer">
+    <!--小标题-->
+    <template is="child-title" data="{{title : 'view'}}"/>
+    <!--介绍-->
+    <template is="introduction" data="{{introduction : '视图容器。'}}"/>
+    <!--表格-->
+    <view class = "form form-title">
+        <view class = "form-item">属性名</view>
+        <view class = "form-item">类型</view>
+        <view class = "form-item">默认值</view>
+        <view class = "form-item">说明</view>
+    </view>
+    <!--表格分割线-->
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">hover</view>
+        <view class = "form-item">Boolean</view>
+        <view class = "form-item">false</view>
+        <view class = "form-item">是否启用点击态</view>
+    </view>
+    <!--表格分割线-->
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">hover-class</view>
+        <view class = "form-item"> String</view>
+        <view class = "form-item">none</view>
+        <view class = "form-item">指定按下去的样式类。当<text class = "code-text">hover-class="none"</text>时，没有点击态效果</view>
+    </view>
+    <!--表格分割线-->
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">hover-start-time</view>
+        <view class = "form-item">Number</view>
+        <view class = "form-item">50</view>
+        <view class = "form-item">按住后多久出现点击态，单位毫秒</view>
+    </view>
+    <!--表格分割线-->
+    <view class = "form-separateLine"></view> 
+    <view class = "form form-content">
+        <view class = "form-item">hover-stay-time</view>
+        <view class = "form-item">Number</view>
+        <view class = "form-item">400</view>
+        <view class = "form-item">手指松开后点击态保留时间，单位毫秒</view>
+    </view>
+    <!--表格分割线-->
+    <view class = "form-separateLine"></view> 
+
+    <!--小标题-->
+    <template is="child-title" data="{{title : '示例：'}}"/>
+    <!--代码块-->
+    <view class = "code-block-js">
+        <text>{{codes[0]}}</text>
+    </view>
+    <!--图片-->
+    <template is="introduction-image" data="{{image : 'https://mp.weixin.qq.com/debug/wxadoc/dev/image/pic/view.png?t=20161222',imageHeight : '500px',imageWidth : '100%'}}"/>
+</view>

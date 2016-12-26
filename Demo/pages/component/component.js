@@ -20,7 +20,7 @@ Page({
             detailArrowImagePath : "../../image/arrowright.png" ,
             detailIsShow : false,
             detailIsLevels : false,
-            detailUrl : 'frame/frame',
+            detailUrl : 'viewContainer/view/view',
             detailDetailItems:[]
           },
           {
